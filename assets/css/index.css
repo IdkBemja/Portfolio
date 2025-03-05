@@ -420,3 +420,25 @@ ul, li, a {
     text-decoration: underline;
     cursor: pointer;
 }
+
+
+
+@media (max-width: 768px) {
+    .top-header ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .panel-home-container, .panel-projects-container {
+        width: 100%;
+    }
+    .panel-home-content {
+        width: 100%;
+    }
+    .table-courses {
+        width: 100%;
+    }
+    .project-card {
+        flex-direction: column;
+        width: 100%;
+    }
+}
