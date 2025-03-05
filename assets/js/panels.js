@@ -496,7 +496,6 @@ function projects_panel(isSpanish) {
                 </div>
             </div>
         </div>`;
-
     proyectsPanel.innerHTML = proyectsPanelHTML;
 }
 
