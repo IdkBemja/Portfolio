@@ -235,6 +235,52 @@ function home_panel(isSpanish) {
                         </tr>
                     </table>
                 </div>
+                <div class="panel-home-me-technical-knowledge">
+                    <h3>¿Cuáles son mis conocimientos técnicos?</h3>
+                    <p>Tengo muchos conocimientos en lenguajes de programación, como:</p>
+                    <div class="technical-knowledge">
+                        <div class="infobox">
+                            <h3><i class="fab fa-html5"></i>  Frontend</h3>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Bootstrap (Íconos y CSS)</li>
+                                <li>Javascript</li>
+                                <li>Django</li>
+                            </ul>
+                        </div>
+                        <div class="infobox">
+                            <h3><i class="fas fa-server"></i> Backend</h3>
+                            <ul>
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>C#</li>
+                                <li>PHP</li>
+                            </ul>
+                        </div>
+                        <div class="infobox">
+                            <h3><i class="fas fa-database"></i> Base de Datos</h3>
+                            <ul>
+                                <li>MySQL</li>
+                                <li>SQL Server</li>
+                            </ul>
+                        </div>
+                        <div class="infobox">
+                            <h3> <i class="fab fa-git"></i> Otros</h3>
+                            <ul>
+                                <li>Git</li>
+                                <li>Github</li>
+                                <li>XAMPP</li>
+                                <li>Flask</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel-home-btns">
+                        <h3>¿Quieres ver mis proyectos?</h3>
+                        <p>Si estás interesado en mis proyectos o solo quieres contactarme, haz clic en los siguientes botones</p>
+                        <button class="btn-primary" id="btn-projects"><i class="bi bi-github"></i> Proyectos</button>
+                        <button class="btn-success btn-contactme"><i class="bi bi-telephone-fill"></i> Contáctame</button>
+                    </div>
             </div>
         </div>
     `:`
