@@ -441,6 +441,17 @@ function projects_panel(isSpanish) {
                         </div>
                     </div>
                 </div>
+                <div class="project-card">
+                    <img src="assets/imgs/multiplicationapp.png" alt="MultiplicationApp Web" class="project-card-img">
+                    <div class="project-info">
+                        <h2>Aplicación Para Multiplicar <em>Página Web</em></h2>
+                        <p>Este es un sitio web simple en el que, utilizando JavaScript y HTML, puedes practicar las tablas de multiplicar, con un estilo minimalista y visualmente agradable.</p>
+                        <div class="project-card-btns">
+                            <button class="btn-success" id="project-multiplicationapp">Haz clic aquí para ver</button>
+                            <button class="btn-primary" id="project-multiplicationapp-src">Código Fuente</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     `:`
@@ -491,6 +502,17 @@ function projects_panel(isSpanish) {
                         <div class="project-card-btns">
                             <button class="btn-success" id="project-secretsanta">Click here to view</button>
                             <button class="btn-primary" id="project-secretsanta-src">Source Code</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/imgs/multiplicationapp.png" alt="MultiplicationApp Web" class="project-card-img">
+                    <div class="project-info">
+                        <h2>Multiplication App<em>Página Web</em></h2>
+                        <p>This is a simple website where, using JavaScript and HTML, you can practice multiplication tables, in a minimalist and visually pleasing style.</p>
+                        <div class="project-card-btns">
+                            <button class="btn-success" id="project-multiplicationapp">Click here to view</button>
+                            <button class="btn-primary" id="project-multiplicationapp-src">Source Code</button>
                         </div>
                     </div>
                 </div>

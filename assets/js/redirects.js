@@ -50,4 +50,12 @@ $(document).ready(function() {
     $(document).on('click', '#project-secretsanta-src', function() {
         window.open("https://github.com/IdkBemja/amigo-secreto", "_blank");
     });
+
+    $(document).on('click', '#project-multiplicationapp', function() {
+        window.open("https://idkbemja.github.io/MultiplicationApp/", "_blank");
+    });
+
+    $(document).on('click', '#project-multiplicationapp-src', function() {
+        window.open("https://github.com/IdkBemja/MultiplicationApp", "_blank");
+    });
 });
