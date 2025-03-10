@@ -508,7 +508,7 @@ function projects_panel(isSpanish) {
                 <div class="project-card">
                     <img src="assets/imgs/multiplicationapp.png" alt="MultiplicationApp Web" class="project-card-img">
                     <div class="project-info">
-                        <h2>Multiplication App<em>Página Web</em></h2>
+                        <h2>Multiplication App<em>WebPage</em></h2>
                         <p>This is a simple website where, using JavaScript and HTML, you can practice multiplication tables, in a minimalist and visually pleasing style.</p>
                         <div class="project-card-btns">
                             <button class="btn-success" id="project-multiplicationapp">Click here to view</button>
