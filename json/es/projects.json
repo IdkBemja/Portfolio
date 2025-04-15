@@ -1,0 +1,128 @@
+[
+    {
+        "title": "Mi Portafolio",
+        "subtitle": "Página Web",
+        "description": "En este portafolio personal presento mis proyectos y habilidades. Está pensado para ofrecer una navegación sencilla y una apariencia moderna y ordenada. Utilizo HTML, CSS y JavaScript para mostrar la información de forma dinámica, adaptando el contenido al idioma del usuario mediante archivos JSON, con el objetivo de brindar una experiencia más personalizada.",
+        "image": "assets/imgs/icon.PNG",
+        "demo": "https://idkbemja.me",
+        "repo": "https://github.com/IdkBemja/Portfolio",
+        "technologys": ["HTML", "CSS", "JavaScript / JSON", "Bootstrap"]
+    },
+    {
+        "title": "LBedWars - Plugin de Minecraft",
+        "subtitle": "Spigot 1.8",
+        "description": "Este plugin de Minecraft permite recrear una jugabilidad similar a Hypixel Bedwars, con muchas características y personalizaciones. Este plugin está diseñado para Spigot 1.8 y es compatible con las últimas versiones de Minecraft. ¡Incluye muchas funciones como ítems personalizables, reglas de juego personalizables, mensajes personalizables y mucho más!",
+        "image": "assets/imgs/lbedwarsproject.webp",
+        "demo": "https://www.spigotmc.org/resources/%E2%9C%A8-lbedwars-%E2%9C%A8-best-addon-for-bedwars.92095/",
+        "repo": null,
+        "technologys": ["Java", "Spigot API", "Minecraft"]
+    },
+    {
+        "title": "Simple SpeedTest",
+        "subtitle": "Página Web",
+        "description": "Aplicación de prueba de velocidad de código abierto y fácil de usar, diseñada para proporcionar métricas precisas de velocidad de Internet. Permite a los usuarios medir y analizar el ping, la velocidad de descarga y subida de su conexión fácilmente. Esta app utiliza JS, Bootstrap Icons y CSS para el frontend, y Python Flask para el backend.",
+        "image": "assets/imgs/simplespeedtestproject.webp",
+        "demo": null,
+        "repo": "https://github.com/IdkBemja/SimpleSpeedTest",
+        "technologys": ["JavaScript", "Bootstrap", "CSS", "Python", "Flask"]
+    },
+    {
+        "title": "Aplicación de Notas Simple",
+        "subtitle": "Página Web",
+        "description": "Aplicación de notas de código abierto y fácil de usar, diseñada para ayudar a los usuarios a organizar sus pensamientos, ideas y tareas. Permite crear, editar y eliminar notas, cada una de las cuales puede ser categorizada para una mejor organización. Utilicé los siguientes lenguajes: JS y Bootstrap para el frontend, Python Flask y SQLite para el backend y la base de datos.",
+        "image": "assets/imgs/simplenoteapp.webp",
+        "demo": null,
+        "repo": "https://github.com/IdkBemja/SimpleNoteApp",
+        "technologys": ["JavaScript", "Bootstrap", "Python", "Flask", "SQLite"]
+    },
+    {
+        "title": "Aplicación Amigo Secreto",
+        "subtitle": "Página Web",
+        "description": "Este es un sitio web sencillo que, usando JavaScript y HTML, te permite agregar los nombres de tus amigos y hacer el sorteo para saber a quién le toca regalarle. 👀",
+        "image": "assets/imgs/secret-santa.webp",
+        "demo": "https://idkbemja.github.io/amigo-secreto/",
+        "repo": "https://github.com/IdkBemja/amigo-secreto",
+        "technologys": ["JavaScript", "HTML", "CSS"]
+    },
+    {
+        "title": "Aplicación de Multiplicación",
+        "subtitle": "Página Web",
+        "description": "Este es un sitio web sencillo donde, usando JavaScript y HTML, puedes practicar las tablas de multiplicar en un estilo minimalista y visualmente agradable.",
+        "image": "assets/imgs/multiplicationapp.webp",
+        "demo": "https://idkbemja.github.io/MultiplicationApp/",
+        "repo": "https://github.com/IdkBemja/MultiplicationApp",
+        "technologys": ["JavaScript", "HTML", "CSS"]
+    },
+    {
+        "title": "Sistema de Remuneraciones",
+        "subtitle": "Aplicación de Escritorio",
+        "description": "Este proyecto fue creado como evaluación para la prueba nacional de programación en Chile. Esta aplicación utiliza C# y los datos se almacenan en memoria temporalmente. Se utilizaron métodos CRUD (Create, Read, Update & Delete) con una arquitectura en capas, lo que facilita la organización y comprensión del proyecto.",
+        "image": "assets/imgs/sistema-remuneraciones.webp",
+        "demo": "https://github.com/IdkBemja/Sistema-Remuneraciones-Desktop/releases/tag/v1.0",
+        "repo": "https://github.com/IdkBemja/Sistema-Remuneraciones-Desktop",
+        "technologys": ["C#", "Windows Forms", "CRUD"]
+    },
+    {
+        "title": "RadioTest",
+        "subtitle": "Aplicación Java CLI",
+        "description": "Este proyecto es un reto de programación para entender cómo funciona la programación orientada a objetos (POO).",
+        "image": "assets/imgs/radio-test.webp",
+        "demo": null,
+        "repo": "https://github.com/IdkBemja/RadioTest-Java",
+        "technologys": ["Java"]
+    },
+    {
+        "title": "Aplicación de Tareas",
+        "subtitle": "Página Web",
+        "description": "Este proyecto es una evaluación final del Bootcamp Coding Dojo, en la cual se nos pidió crear una aplicación de tareas usando HTML, CSS y JavaScript. Esta aplicación permite agregar tareas y marcarlas como completadas.",
+        "image": "assets/imgs/todo-app.webp",
+        "demo": null,
+        "repo": "https://github.com/IdkBemja/TaskApps",
+        "technologys": ["HTML", "Bootstrap", "Python", "Flask"]
+    },
+    {
+        "title": "ScreenMatch",
+        "subtitle": "Aplicación Java CLI",
+        "description": "Este proyecto es un reto de programación para entender cómo funciona la programación orientada a objetos (POO), además de comprender conceptos como herencia y polimorfismo.",
+        "image": "assets/imgs/screenmatch.webp",
+        "demo": null,
+        "repo": "https://github.com/IdkBemja/screenmatch",
+        "technologys": ["Java"]
+    },
+    {
+        "title": "Belt Review",
+        "subtitle": "Aplicación Web",
+        "description": "Este proyecto es un reto de programación utilizando el framework Flask. En este proyecto se nos pidió crear un sistema de gestión de profesores para una escuela de programación. Este sistema permite a los profesores gestionar a los estudiantes mediante cinturones, usando métodos CRUD.",
+        "image": "assets/imgs/belt-review.webp",
+        "demo": null,
+        "repo": "https://github.com/IdkBemja/belt_review",
+        "technologys": ["Python", "Flask", "CRUD"]
+    },
+    {
+        "title": "Muro Privado",
+        "subtitle": "Aplicación Web",
+        "description": "Este proyecto es un reto de programación utilizando el framework Flask. En este proyecto se nos pidió crear una aplicación web donde los usuarios pueden publicar mensajes y ver los mensajes de otros usuarios.",
+        "image": "assets/imgs/muro-privado.webp",
+        "demo": null,
+        "repo": "https://github.com/IdkBemja/muro_privado",
+        "technologys": ["Python", "Flask", "CRUD"]
+    },
+    {
+        "title": "Oro Ninja",
+        "subtitle": "Aplicación Web",
+        "description": "Este proyecto es un juego simple donde puedes obtener monedas haciendo clic en la pantalla. Este proyecto fue creado como un reto de programación usando el framework Flask.",
+        "image": "assets/imgs/oro-ninja.webp",
+        "demo": null,
+        "repo": "https://github.com/IdkBemja/Oro_ninja",
+        "technologys": ["Python", "Flask", "CRUD"]
+    },
+    {
+        "title": "Páginas Web HTML",
+        "subtitle": "Colección de Páginas Web",
+        "description": "Esta es una colección de páginas web que he creado usando HTML y CSS. Estas páginas son simples y están diseñadas para mostrar cómo fui evolucionando en el aprendizaje de HTML y CSS.",
+        "image": "assets/imgs/coleccion-html.webp",
+        "demo": null,
+        "repo": "https://github.com/IdkBemja/Simple-WebPages",
+        "technologys": ["HTML", "CSS"]
+    }
+]

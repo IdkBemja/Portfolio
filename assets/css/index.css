@@ -22,7 +22,8 @@ html, body {
     align-items: center;
     justify-content: center;
     box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.3);
-    padding: 10px;
+    padding: 20px;
+    font-size: 120%;
 }
 
 .top-header ul{
@@ -47,6 +48,8 @@ html, body {
     height: 30px;
     color: orangered;
     border-radius: 5px;
+    font-size: 110%;
+    transition: 0.5s ease;
 }
 
 footer {
@@ -64,7 +67,7 @@ footer {
     justify-content: center;
     width: 100%;
     height: 100%;
-    background-image: url("../imgs/bg.png");
+    background-image: url("../imgs/bg.webp");
     background-position: center;
     background-size: cover;
 }
@@ -174,6 +177,10 @@ footer {
     color: orangered;
 }
 
+.infobox ul {
+    list-style: none;
+}
+
 .panel-home-btns {
     display: flex;
     flex-direction: row;
@@ -233,6 +240,28 @@ footer {
     color: gray;
 }
 
+.project-info p {
+    text-align: justify;
+}
+
+.project-card-technologys {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.project-card-technology {
+    background-color: white;
+    color: #242424;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+
 .project-card-btns {
     display: flex;
     flex-direction: row;
@@ -240,74 +269,6 @@ footer {
     justify-content: right;
 }
 
-/* Panel About Me */
-
-.panel-about-me-container {
-    margin-top: 30px;
-    align-self: center;
-    display: flex;
-    width: 1000px;
-    height: 800px;
-    gap: 20px;
-    flex-direction: row;
-    
-}
-
-.panel-about-me {
-    display: none;
-}
-
-.aboutme-card {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 55%;
-    height: 65%;
-    overflow: auto;
-    border-radius: 15px;
-    padding: 10px;
-    box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.75);
-    background-color: #242424;
-}
-
-.aboutme-card div {
-    display: flex;
-    flex-direction: column;
-}
-
-ul, li, a {
-    list-style: none;
-    text-decoration: none;
-    color: white;
-}
-
-.other-card {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    height: 100%;
-    width: 45%;
-}
-
-.random {
-    width: 80%;
-    height: 40%;
-    border-radius: 50%;
-    background-image: url("../imgs/profile-image.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.75);
-}
-
-.mypc {
-    width: 80%;
-    border-radius: 15px;
-    padding: 10px;
-    overflow: auto;
-    box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.75);
-    background-color: #242424;
-}
 
 /* Icon Colors */
 
@@ -336,6 +297,13 @@ ul, li, a {
     border-radius: 5px;
     color: white;
     background-color: blue;
+}
+
+.btn-primary:hover {
+    transition: 0.2s ease;
+    color: white;
+    background-color: rgb(0, 0, 189);
+    text-align: center;
 }
 
 .btn-primary-disabled {
@@ -398,6 +366,13 @@ ul, li, a {
     background-color: rgb(1, 80, 1);
 }
 
+.btn-success:hover {
+    transition: 0.2s ease;
+    color: white;
+    background-color: darkgreen;
+    text-align: center;
+}
+
 .btn-success:active {
     cursor: pointer;
     width: 150px;
@@ -454,4 +429,13 @@ ul, li, a {
         height: auto;
         border-radius: 50%;
     }
+}
+
+.fade-in {
+    animation: fadeIn 0.7s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px);}
+    to { opacity: 1; transform: translateY(0);}
 }

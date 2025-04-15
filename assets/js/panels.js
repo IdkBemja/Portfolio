@@ -4,6 +4,7 @@ $(document).ready(function() {
 
 
     home_panel(isSpanish);
+    show_panel('panel-home');
 
 
     $('#boton-home').click(function() {
@@ -19,133 +20,13 @@ $(document).ready(function() {
         projects_panel(isSpanish);
         show_panel('panel-projects');
     });
-
-    $('#boton-aboutme').click(function() {
-        hide_panels();
-        clear_panels();
-        aboutMePanel(isSpanish);
-        show_panel('panel-about-me');
-    });
-
 });
-
-function aboutMePanel(isSpanish) {
-    const panelAboutMe = document.querySelector('.panel-about-me');
-    const aboutMeCardHTML = isSpanish ? `
-    <div class="panel-about-me-container">
-        <div class="aboutme-card">
-            <div>
-                <h3><i class="bi bi-person-circle"></i> Sobre mí</h3>
-                <ul>
-                    <li>Nombre: Benjamin Ignacio</li>
-                    <li>Apellido: Mora Urra</li>
-                    <li>Fecha de nacimiento: 29 de septiembre</li>
-                    <li>Pronombres: Él</li>
-                    <li>Pasatiempos: Jugar videojuegos</li>
-                </ul>
-            </div>
-            <div>
-                <h3><i class="bi bi-braces"></i> Habilidades blandas</h3>
-                <ul>
-                    <li>Idiomas: Español / Inglés (Hablado y Escrito)</li>
-                    <li>Capacidad para encontrar soluciones a problemas complejos</li>
-                    <li>Capacidad de aprendizaje rápido</li>
-                    <li>Capacidad de liderazgo</li>
-                    <li>Atención a cada detalle de cada trabajo que realizo</li>
-                </ul>
-            </div>
-            <div>
-                <h3><i class="bi bi-bookmark-fill"></i> Redes sociales</h3>
-                <ul>
-                    <li><i class="bi bi-discord"></i> Discord: @idkbemja</li>
-                    <li><i class="bi bi-instagram"></i> Instagram: <a href="https://www.instagram.com/idk.orangedbenja/">idk.orangedbenja</a></li>
-                    <li><i class="bi bi-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/idkbemja/">IdkBemja</a></li>
-                    <li><i class="bi bi-tiktok"></i> Tiktok: <a href="https://www.tiktok.com/@idkorangedbenja">idkorangedbenja</a></li>
-                    <li><i class="bi bi-twitch"></i> Twitch: <a href="https://www.twitch.tv/idkorangedbenja">IdkOrangedBenja</a></li>
-                    <li><i class="bi bi-steam"></i> Steam: <a href="https://steamcommunity.com/id/idkorangedbenja/">Idk.OrangeBenja</a></li>
-                    <li><i class="bi bi-github"></i> GitHub: <a href="https://github.com/IdkBemja">IdkBemja</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="other-card">
-            <div class="random"></div> 
-            <div class="mypc">
-                <h3><i class="bi bi-pc"></i> Especificaciones de mi PC</h3>
-                <ul>
-                    <li>CPU: Intel Xeon E5-2650 v3 3.0GHz</li>
-                    <li>GPU: RTX 2060 6GB Dual Evo OC</li>
-                    <li>RAM: 16 GB DDR4</li>
-                    <li>Almacenamiento: 1,5 TB HDD, 512SSD m.2 nvme</li>
-                    <li>Monitor: HP x22 144hz, HP x1907, HKCTV</li>
-                    <li>Mouse: Attack Shark x6 Versión Blanca</li>
-                    <li>Teclado: RedDragon Kumara K552RGB</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    ` : `
-    <div class="panel-about-me-container">
-        <div class="aboutme-card">
-            <div>
-                <h3><i class="bi bi-person-circle"></i> About Me</h3>
-                <ul>
-                    <li>Name: Benjamin Ignacio</li>
-                    <li>Last Name: Mora Urra</li>
-                    <li>Birthday: 29 September</li>
-                    <li>Pronouns: He/Him</li>
-                    <li>Hobbies: Playing Videogames</li>
-                </ul>
-            </div>
-                <div>
-                    <h3><i class="bi bi-braces"></i> Soft Skills</h3>
-                    <ul>
-                        <li>Languages: Spanish / English (Speaking and Writing)</li>
-                        <li>Ability to Find Solutions to Complex Problems</li>
-                        <li>Ability to learn quickly</li>
-                        <li>Leadership Capacity</li>
-                        <li>Attention to every detail of every job I do</li>
-                    </ul>
-                </div>
-            <div>
-                <h3><i class="bi bi-bookmark-fill"></i> Social Media</h3>
-                <ul>
-                    <li><i class="bi bi-discord"></i> Discord: @idkbemja</li>
-                    <li><i class="bi bi-instagram"></i> Instagram: <a href="https://www.instagram.com/idk.orangedbenja/">idk.orangedbenja</a></li>
-                    <li><i class="bi bi-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/idkbemja/">IdkBemja</a></li>
-                    <li><i class="bi bi-tiktok"></i> Tiktok: <a href="https://www.tiktok.com/@idkorangedbenja">idkorangedbenja</a></li>
-                    <li><i class="bi bi-twitch"></i> Twitch: <a href="https://www.twitch.tv/idkorangedbenja">IdkOrangedBenja</a></li>
-                    <li><i class="bi bi-steam"></i> Steam: <a href="https://steamcommunity.com/id/idkorangedbenja/">Idk.OrangeBenja</a></li>
-                    <li><i class="bi bi-github"></i> GitHub: <a href="https://github.com/IdkBemja">IdkBemja</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="other-card">
-            <div class="random"></div> 
-            <div class="mypc">
-                <h3><i class="bi bi-pc"></i> My PC Specs</h3>
-                <ul>
-                    <li>CPU: Intel Xeon E5-2650 v3 3.0GHz</li>
-                    <li>GPU: RTX 2060 6GB Dual Evo OC</li>
-                    <li>RAM: 16 GB DDR4</li>
-                    <li>Storage: 1,5 TB HDD, 512SSD m.2 nvme</li>
-                    <li>Monitor: HP x22 144hz, HP x1907, HKCTV</li>
-                    <li>Mouse: Attack Shark x6 White Version</li>
-                    <li>Keyboard: RedDragon Kumara K552RGB</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    `;
-
-    panelAboutMe.innerHTML = aboutMeCardHTML;
-}
 
 function hide_panels() {
     
     const panelsToHide = [
         "panel-home",
-        "panel-projects",
-        "panel-about-me"
+        "panel-projects"
     ];
 
     panelsToHide.forEach(panelId => {
@@ -160,8 +41,7 @@ function hide_panels() {
 function clear_panels() {
     const panelsToClear = [
         "panel-home",
-        "panel-projects",
-        "panel-about-me"
+        "panel-projects"
     ];
 
     panelsToClear.forEach(panelId => {
@@ -180,9 +60,37 @@ function show_panel(panel) {
         if (panelElement.style.display !== 'flex') {
             panelElement.style.display = 'flex';
         }
+        // Aplica animación
+        panelElement.classList.remove('fade-in');
+        void panelElement.offsetWidth;
+        panelElement.classList.add('fade-in');
     }
 }
 
+// Aplica la animación al mostrar un panel
+function showPanel(panelSelector) {
+    const panel = document.querySelector(panelSelector);
+    panel.classList.remove('fade-in');
+    void panel.offsetWidth;
+    panel.classList.add('fade-in');
+}
+
+function animatePanel(panelSelector) {
+    const panel = document.querySelector(panelSelector);
+    if (!panel) return;
+    panel.classList.remove('fade-in');
+    void panel.offsetWidth;
+    panel.classList.add('fade-in');
+}
+
+// Ejemplo de uso al cambiar de sección:
+function showHomePanel() {
+    animatePanel('.panel-home');
+}
+
+function showProjectsPanel() {
+    animatePanel('.panel-projects');
+}
 
 function home_panel(isSpanish) {
     const HomePanel = document.querySelector('.panel-home');
@@ -272,6 +180,7 @@ function home_panel(isSpanish) {
                                 <li>Github</li>
                                 <li>XAMPP</li>
                                 <li>Flask</li>
+                                <li>Unity</li>
                             </ul>
                         </div>
                     </div>
@@ -371,6 +280,7 @@ function home_panel(isSpanish) {
                                 <li>Github</li>
                                 <li>XAMPP</li>
                                 <li>Flask</li>
+                                <li>Unity</li>
                             </ul>
                         </div>
                     </div>
@@ -389,135 +299,56 @@ function home_panel(isSpanish) {
 }
 
 function projects_panel(isSpanish) {
-    const proyectsPanel = document.querySelector('.panel-projects');
-    const proyectsPanelHTML = isSpanish ? `
-        <div class="panel-projects-container">
-            <div class="panel-projects-info">
+    const projectsPanel = document.querySelector('.panel-projects');
+    const lang = isSpanish ? 'es' : 'en';
+    const jsonPath = `json/${lang}/projects.json`;
+
+    const headerHTML = isSpanish
+        ? `<div class="panel-projects-info">
                 <h1>Proyectos</h1>
                 <p>Aquí puedes ver todos los proyectos que he desarrollado, también puedes ver el código de cada uno de ellos en mi repositorio de Github.</p>
-            </div>
-            <div class="panel-projects-list">
-                <div class="project-card">
-                    <img src="assets/imgs/lbedwarsproject.jpg" alt="LBedWars Plugin" class="project-card-img">
-                    <div class="project-info">
-                        <h2>LBedWars - Plugin de Minecraft <em>Spigot 1.8</em></h2>
-                        <p>Este Plugin de Minecraft te permite recrear una jugabilidad similar a la de Hypixel Bedwars. Fue creado usando Spigot 1.8 y JDK 1.8</p>
-                        <div class="project-card-btns">
-                            <button class="btn-success" id="project-lbedwars">Haz clic aquí para ver</button>
-                            <button class="btn-primary-disabled">Código Fuente</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="assets/imgs/simplespeedtestproject.png" alt="SimpleSpeedTest Web" class="project-card-img">
-                    <div class="project-info">
-                        <h2>Simple SpeedTest <em>Página Web</em></h2>
-                        <p>Aplicación de prueba de velocidad de código abierto y fácil de usar, diseñada para proporcionar métricas precisas de velocidad de internet. Permite a los usuarios medir y analizar el ping, la velocidad de descarga y carga de su conexión con facilidad. Esta aplicación utiliza JS y los íconos y CSS de Bootstrap para el frontend y Python Flask para el backend.</p>
-                        <div class="project-card-btns">
-                            <button class="btn-success-disabled">Haz clic aquí para ver</button>
-                            <button class="btn-primary" id="project-simplespeedtest-src">Código Fuente</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="assets/imgs/simplenoteapp.png" alt="SimpleNoteApp Web" class="project-card-img">
-                    <div class="project-info">
-                        <h2>Aplicación de Notas Simple <em>Página Web</em></h2>
-                        <p>Aplicación de código abierto y fácil de usar para tomar notas, diseñada para ayudar a los usuarios a seguir sus pensamientos, ideas y tareas. La aplicación permite a los usuarios crear, editar y eliminar notas, cada una de las cuales puede ser categorizada para una fácil organización. Utilicé los siguientes lenguajes: JS, Bootstrap para el frontend. Python Flask y SQLite para el backend y la base de datos.</p>
-                        <div class="project-card-btns">
-                            <button class="btn-success-disabled">Haz clic aquí para ver</button>
-                            <button class="btn-primary" id="project-simplenoteapp-src">Código Fuente</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="assets/imgs/secret-santa.png" alt="SimpleNoteApp Web" class="project-card-img">
-                    <div class="project-info">
-                        <h2>Aplicación Secret Santa <em>Página Web</em></h2>
-                        <p>Este es un sitio web simple en el que, utilizando JavaScript y HTML, puedes agregar los nombres de tus amigos y hacer un sorteo para saber a quién le deben regalar un obsequio. 👀</p>
-                        <div class="project-card-btns">
-                            <button class="btn-success" id="project-secretsanta">Haz clic aquí para ver</button>
-                            <button class="btn-primary" id="project-secretsanta-src">Código Fuente</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="assets/imgs/multiplicationapp.png" alt="MultiplicationApp Web" class="project-card-img">
-                    <div class="project-info">
-                        <h2>Aplicación Para Multiplicar <em>Página Web</em></h2>
-                        <p>Este es un sitio web simple en el que, utilizando JavaScript y HTML, puedes practicar las tablas de multiplicar, con un estilo minimalista y visualmente agradable.</p>
-                        <div class="project-card-btns">
-                            <button class="btn-success" id="project-multiplicationapp">Haz clic aquí para ver</button>
-                            <button class="btn-primary" id="project-multiplicationapp-src">Código Fuente</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    `:`
-        <div class="panel-projects-container">
-            <div class="panel-projects-info">
+           </div>`
+        : `<div class="panel-projects-info">
                 <h1>Projects</h1>
                 <p>Here you can see all the projects that I have developed, you can also see the code of each one of them in my Github repository.</p>
-            </div>
-            <div class="panel-projects-list">
-                <div class="project-card">
-                    <img src="assets/imgs/lbedwarsproject.jpg" alt="LBedWars Plugin" class="project-card-img">
-                    <div class="project-info">
-                        <h2>LBedWars - Minecraft Plugin <em>Spigot 1.8</em></h2>
-                        <p>This Minecraft Plugin allows you to recreate gameplay like Hypixel Bedwars. This was created using Spigot 1.8 and JDK 1.8</p>
-                        <div class="project-card-btns">
-                            <button class="btn-success" id="project-lbedwars">Click here to view</button>
-                            <button class="btn-primary-disabled">Source Code</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="assets/imgs/simplespeedtestproject.png" alt="SimpleSpeedTest Web" class="project-card-img">
-                    <div class="project-info">
-                        <h2>Simple SpeedTest <em>WebPage</em></h2>
-                        <p>User-Friendly open-source speed test application designed to provide accurate internet speed metrics. It allow users to measure and Analyze their connection's ping, download and upload speed with ease. This app use Js And Bootstrap icons and css for frontend and python flask for backend.</p>
-                        <div class="project-card-btns">
-                            <button class="btn-success-disabled">Click here to view</button>
-                            <button class="btn-primary" id="project-simplespeedtest-src">Source Code</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="assets/imgs/simplenoteapp.png" alt="SimpleNoteApp Web" class="project-card-img">
-                    <div class="project-info">
-                        <h2>Simple Note Application <em>WebPage</em></h2>
-                        <p>user-friendly open-source note-taking application designed to help users keep track of their thoughts, ideas, and tasks. The app allows users to create, edit, and delete notes, each of which can be categorized for easy organization. i used these following languages: JS, Bootstrap for Frontend. Python Flask and SQLlite For Backend and Database.</p>
-                        <div class="project-card-btns">
-                            <button class="btn-success-disabled">Click here to view</button>
-                            <button class="btn-primary" id="project-simplenoteapp-src">Source Code</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="assets/imgs/secret-santa.png" alt="SimpleNoteApp Web" class="project-card-img">
-                    <div class="project-info">
-                        <h2>Secret Santa Application <em>WebPage</em></h2>
-                        <p>This is a simple website that using JavaScript and HTML you can add names of your friends and draw them to know who they should give a gift to. 👀</p>
-                        <div class="project-card-btns">
-                            <button class="btn-success" id="project-secretsanta">Click here to view</button>
-                            <button class="btn-primary" id="project-secretsanta-src">Source Code</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="assets/imgs/multiplicationapp.png" alt="MultiplicationApp Web" class="project-card-img">
-                    <div class="project-info">
-                        <h2>Multiplication App<em>WebPage</em></h2>
-                        <p>This is a simple website where, using JavaScript and HTML, you can practice multiplication tables, in a minimalist and visually pleasing style.</p>
-                        <div class="project-card-btns">
-                            <button class="btn-success" id="project-multiplicationapp">Click here to view</button>
-                            <button class="btn-primary" id="project-multiplicationapp-src">Source Code</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>`;
-    proyectsPanel.innerHTML = proyectsPanelHTML;
-}
+           </div>`;
 
+    projectsPanel.innerHTML = `
+        <div class="panel-projects-container">
+            ${headerHTML}
+            <div class="panel-projects-list"></div>
+        </div>
+    `;
+
+    // Cargar proyectos dinámicamente
+    fetch(jsonPath)
+        .then(response => response.json())
+        .then(projects => {
+            const list = projectsPanel.querySelector('.panel-projects-list');
+            list.innerHTML = ''; // Limpiar antes de agregar
+
+            projects.forEach(project => {
+                list.innerHTML += `
+                    <div class="project-card">
+                        <img src="${project.image}" alt="${project.title}" class="project-card-img">
+                        <div class="project-info">
+                            <h2>${project.title} <em>${project.subtitle || ''}</em></h2>
+                            <p>${project.description}</p>
+                            <div class="project-card-technologys">
+                                ${project.technologys.map(tech => `<span class="project-card-technology">${tech}</span>`).join('')}
+                            </div>
+                            <div class="project-card-btns">
+                                ${project.demo ? `<button class="btn-success" onclick="window.open('${project.demo}', '_blank')">${isSpanish ? 'Ver Demo' : 'View Demo'}</button>` : ''}
+                                ${project.repo ? `<button class="btn-primary" onclick="window.open('${project.repo}', '_blank')">${isSpanish ? 'Código Fuente' : 'Source Code'}</button>` : ''}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+        })
+        .catch(error => {
+            const list = projectsPanel.querySelector('.panel-projects-list');
+            list.innerHTML = `<p style="color:red">${isSpanish ? 'No se pudieron cargar los proyectos.' : 'Failed to load projects.'}</p>`;
+            console.error(error);
+        });
+}
