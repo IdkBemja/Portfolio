@@ -442,6 +442,12 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+    .technical-knowledge, .table-courses{
+        transform: scale(0.8);
+    }
+    .panel-home-me-technical-knowledge{
+        text-align: center;
+    }
 }
 
 .fade-in {
