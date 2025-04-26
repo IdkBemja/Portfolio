@@ -56,6 +56,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     height: 50px;
 }
 
@@ -428,6 +429,18 @@ footer {
         width: 60%;
         height: auto;
         border-radius: 50%;
+    }
+
+    .project-card {
+        flex-direction: column;
+
+    }
+    .project-card-technologys {
+        flex-wrap: wrap;
+    }
+    .panel-home-btns {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
