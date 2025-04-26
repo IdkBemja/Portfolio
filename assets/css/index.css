@@ -403,10 +403,6 @@ footer {
         width: 90%;
     }
 
-    .panel-home-content, .panel-home-me, .panel-home-me-courses, .panel-home-me-technical-knowledge, .panel-projects-info, .project-card, .aboutme-card, .mypc {
-        padding: 10px;
-    }
-
     .panel-home-me {
         border-radius: 15px;
     }
