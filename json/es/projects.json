@@ -27,7 +27,16 @@
         "technologys": ["JavaScript", "Bootstrap", "CSS", "Python", "Flask"]
     },
     {
-        "title": "Aplicación de Notas Simple",
+          "title": "Aplicación de Notas v2",
+          "subtitle": "Página Web",
+          "description": "La versión 2 de esta aplicación de notas introduce mejoras significativas en su gestión y funcionalidad. Ahora utiliza JWT para la autenticación segura y optimiza el uso de JavaScript para una experiencia más fluida y eficiente. Esta app permite a los usuarios crear, editar, y eliminar notas, categorizándolas para mejor organización. Además, incluye un diseño moderno usando Bootstrap Icons, y emplea Python Flask y SQLite para el backend y la base de datos.",
+          "image": "assets/imgs/simplenoteapp.webp",
+          "demo": "https://notesapp.idkbemja.me",
+          "repo": "https://github.com/IdkBemja/SimpleNoteApp",
+          "technologys": ["JavaScript", "Bootstrap", "Python", "Flask", "SQLite", "JWT"]
+    },
+    {
+        "title": "Aplicación de Notas Simple v1",
         "subtitle": "Página Web",
         "description": "Aplicación de notas de código abierto y fácil de usar, diseñada para ayudar a los usuarios a organizar sus pensamientos, ideas y tareas. Permite crear, editar y eliminar notas, cada una de las cuales puede ser categorizada para una mejor organización. Utilicé los siguientes lenguajes: JS y Bootstrap para el frontend, Python Flask y SQLite para el backend y la base de datos.",
         "image": "assets/imgs/simplenoteapp.webp",
