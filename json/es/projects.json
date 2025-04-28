@@ -32,7 +32,7 @@
           "description": "La versión 2 de esta aplicación de notas introduce mejoras significativas en su gestión y funcionalidad. Ahora utiliza JWT para la autenticación segura y optimiza el uso de JavaScript para una experiencia más fluida y eficiente. Esta app permite a los usuarios crear, editar, y eliminar notas, categorizándolas para mejor organización. Además, incluye un diseño moderno usando Bootstrap Icons, y emplea Python Flask y SQLite para el backend y la base de datos.",
           "image": "assets/imgs/simplenoteapp.webp",
           "demo": "https://notesapp.idkbemja.me",
-          "repo": "https://github.com/IdkBemja/SimpleNoteApp",
+          "repo": "https://github.com/IdkBemja/NotesApp-v2",
           "technologys": ["JavaScript", "Bootstrap", "Python", "Flask", "SQLite", "JWT"]
     },
     {
