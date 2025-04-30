@@ -98,7 +98,7 @@ function home_panel(isSpanish) {
         <div class="panel-home-container">
             <div class="panel-home-content">
                 <h1>Hola, soy Benjamin Mora Urra</h1>
-                <em>Desarrollador Backend & FullStack</em>
+                <em>Desarrollador Backend & FullStack Python</em>
                 <p>Soy un programador entusiasta, me gusta el frontend pero me apasiona más el backend, especialmente Java y C#</p>
                 <button class="btn-success btn-contactme">Contáctame</button>
             </div>
@@ -106,7 +106,7 @@ function home_panel(isSpanish) {
                 <div class="panel-home-me-box">
                     <h3>¿Quién soy?</h3>
                     <p>Soy un joven programador apasionado por la tecnología, siempre buscando nuevos desafíos y aprendiendo cosas nuevas, soy desarrollador fullstack, pero enfocado en backend.</p>
-                    <p>Actualmente estoy estudiando ingeniería de software en el Instituto Profesional AIEP, en mi segundo año de estudios, buscando nuevos desafíos y con casi 2 años de experiencia en esto. Comencé en 2017 creando plugins para Minecraft y entendiendo Java. Luego estudié telecomunicaciones en el Liceo Comercial Los Andes.</p>
+                    <p>Actualmente estoy en mi ultimo año estudiando Técnico profesional en programación y analisis de sistemas en el Instituto Profesional AIEP, estoy buscando nuevos desafíos y con casi 2 años de experiencia en esto. Comencé en 2017 creando plugins para Minecraft y entendiendo Java. Luego estudié telecomunicaciones en el Liceo Comercial Los Andes.</p>
                 </div>
                 <div class="panel-home-me-courses">
                     <p>Tengo muchos cursos de tecnología, como:</p>
@@ -171,6 +171,7 @@ function home_panel(isSpanish) {
                             <ul>
                                 <li>MySQL</li>
                                 <li>SQL Server</li>
+                                <li>PostgreSQL</li>
                             </ul>
                         </div>
                         <div class="infobox">
@@ -181,6 +182,7 @@ function home_panel(isSpanish) {
                                 <li>XAMPP</li>
                                 <li>Flask</li>
                                 <li>Unity</li>
+                                <li>JWT</li>
                             </ul>
                         </div>
                     </div>
@@ -196,7 +198,7 @@ function home_panel(isSpanish) {
         <div class="panel-home-container">
             <div class="panel-home-content">
                 <h1>Hi, I'm Benjamin Mora Urra</h1>
-                <em>Backend Developer & FullStack</em>
+                <em>Backend Developer & FullStack Python</em>
                 <p>I am an enthusiastic programmer eager to learn, 
                     I like the frontend but I am even more passionate about the backend, especially Java and C#</p>
                 <button class="btn-success btn-contactme">Contact me</button>
@@ -205,7 +207,7 @@ function home_panel(isSpanish) {
                 <div class="panel-home-me-box">
                     <h3>Who am i?</h3>
                     <p>I am a young programmer who is passionate about technology, I am always looking for new challenges and learning new things, I am a fullstack developer, but focused on backend.</p>
-                    <p>I am currently studying software engineering at the  AIEP Professional Institute , I am in my second year of study, I am looking for new challenges and i have almost 2 years of experience on this. i started on 2017 creating Minecraft plugins and understanding java. Then i studied telecommunications at the Liceo Comercial Los Andes.</p>
+                    <p>I am currently in my final year studying Professional Technician in Programming and Systems Analysis at the AIEP Professional Institute. I am looking for new challenges and have almost 2 years of experience in this field. I started in 2017 creating plugins for Minecraft and learning Java. Later, I studied telecommunications at the Liceo Comercial Los Andes.</p>
                 </div>
                 <div class="panel-home-me-courses">
                     <p>I have Alot of Technology Courses, like:</p>
@@ -271,6 +273,7 @@ function home_panel(isSpanish) {
                             <ul>
                                 <li>MySQL</li>
                                 <li>SQL Server</li>
+                                <li>PostgreSQL</li>
                             </ul>
                         </div>
                         <div class="infobox">
@@ -281,6 +284,7 @@ function home_panel(isSpanish) {
                                 <li>XAMPP</li>
                                 <li>Flask</li>
                                 <li>Unity</li>
+                                <li>JWT</li>
                             </ul>
                         </div>
                     </div>
