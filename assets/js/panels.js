@@ -110,38 +110,88 @@ function home_panel(isSpanish) {
                 </div>
                 <div class="panel-home-me-courses">
                     <p>Tengo muchos cursos de tecnología, como:</p>
-                    <table class="table-courses">
-                        <tr>
-                            <th>Curso</th>
-                            <th>Duración</th>
-                            <th>Año</th>
-                            <th>Certificado</th>
-                        </tr>
-                        <tr>
-                            <td>IOT (Cisco)</td>
-                            <td>1 mes</td>
-                            <td>2022</td>
-                            <td id="iot-certification">Haz clic aquí</td>
-                        </tr>
-                        <tr>
-                            <td>CyberSecurity Essentials (Cisco)</td>
-                            <td>1 mes</td>
-                            <td>2022</td>
-                            <td id="cybersecurity-certification">Haz clic aquí</td>
-                        </tr>
-                        <tr>
-                            <td>Fullstack Python (Coding Dojo)</td>
-                            <td>3 meses</td>
-                            <td>2023</td>
-                            <td id="fullstackpython-certification">Haz clic aquí</td>
-                        </tr>
-                        <tr>
-                            <td>Alura Latam ONE Backend SpringBot (Oracle)</td>
-                            <td>1 año</td>
-                            <td>2025</td>
-                            <td>No disponible (En curso)</td>
-                        </tr>
-                    </table>
+                    <div class="table-courses">
+                        <div class="course-card">
+                            <div class="course-info">
+                                <div class="course-name">IOT (Cisco)</div>
+                                <div class="course-details">
+                                    <div class="course-detail-item">
+                                        <i class="bi bi-clock"></i>
+                                        <span>1 mes</span>
+                                    </div>
+                                    <div class="course-detail-item">
+                                        <i class="bi bi-calendar"></i>
+                                        <span>2022</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="course-certificate" id="iot-certification">Ver Certificado</button>
+                        </div>
+                        <div class="course-card">
+                            <div class="course-info">
+                                <div class="course-name">CyberSecurity Essentials (Cisco)</div>
+                                <div class="course-details">
+                                    <div class="course-detail-item">
+                                        <i class="bi bi-clock"></i>
+                                        <span>1 mes</span>
+                                    </div>
+                                    <div class="course-detail-item">
+                                        <i class="bi bi-calendar"></i>
+                                        <span>2022</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="course-certificate" id="cybersecurity-certification">Ver Certificado</button>
+                        </div>
+                        <div class="course-card">
+                            <div class="course-info">
+                                <div class="course-name">Fullstack Python (Coding Dojo)</div>
+                                <div class="course-details">
+                                    <div class="course-detail-item">
+                                        <i class="bi bi-clock"></i>
+                                        <span>3 meses</span>
+                                    </div>
+                                    <div class="course-detail-item">
+                                        <i class="bi bi-calendar"></i>
+                                        <span>2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="course-certificate" id="fullstackpython-certification">Ver Certificado</button>
+                        </div>
+                        <div class="course-card">
+                            <div class="course-info">
+                                <div class="course-name">Optimización de calidad de resultados con IA (Alura Latam)</div>
+                                <div class="course-details">
+                                    <div class="course-detail-item">
+                                        <i class="bi bi-clock"></i>
+                                        <span>1 mes</span>
+                                    </div>
+                                    <div class="course-detail-item">
+                                        <i class="bi bi-calendar"></i>
+                                        <span>2025</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="course-certificate" id="alura-ia-certification">Ver Certificado</button>
+                        </div>
+                        <div class="course-card">
+                            <div class="course-info">
+                                <div class="course-name">Formación Lógica de programación con JavaScript (Alura Latam)</div>
+                                <div class="course-details">
+                                    <div class="course-detail-item">
+                                        <i class="bi bi-clock"></i>
+                                        <span>1 mes</span>
+                                    </div>
+                                    <div class="course-detail-item">
+                                        <i class="bi bi-calendar"></i>
+                                        <span>2025</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="course-certificate" id="alura-js-certification">Ver Certificado</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="panel-home-me-technical-knowledge">
                     <h3>¿Cuáles son mis conocimientos técnicos?</h3>
@@ -175,6 +225,16 @@ function home_panel(isSpanish) {
                             </ul>
                         </div>
                         <div class="infobox">
+                            <h3> <i class="fa-solid fa-server"></i> Infraestructura</h3>
+                            <ul>
+                                <li>Administración de Servidores Fisicos y Virtuales</li>
+                                <li>GCP & Azure</li>
+                                <li>Oracle Cloud</li>
+                                <li>Docker</li>
+                                <li>Configuración de Redes</li>
+                            </ul>
+                        </div>
+                        <div class="infobox">
                             <h3> <i class="fab fa-git"></i> Otros</h3>
                             <ul>
                                 <li>Git</li>
@@ -183,6 +243,15 @@ function home_panel(isSpanish) {
                                 <li>Flask</li>
                                 <li>Unity</li>
                                 <li>JWT</li>
+                            </ul>
+                        </div>
+                        <div class="infobox">
+                            <h3><i class="fas fa-brain"></i> IA & LLM</h3>
+                            <ul>
+                                <li>Comprensión y uso de LLM (GPT, Llama, etc.)</li>
+                                <li>Ingeniería de prompts y evaluación de respuestas</li>
+                                <li>Fine-tuning y entrenamiento supervisado</li>
+                                <li>Ética y seguridad en IA</li>
                             </ul>
                         </div>
                     </div>
@@ -211,38 +280,88 @@ function home_panel(isSpanish) {
                 </div>
                 <div class="panel-home-me-courses">
                     <p>I have Alot of Technology Courses, like:</p>
-                    <table class="table-courses">
-                        <tr>
-                            <th>Course</th>
-                            <th>Duration</th>
-                            <th>Year</th>
-                            <th>Certified</th>
-                        </tr>
-                        <tr>
-                            <td>IOT (Cisco)</td>
-                            <td>1 Month</td>
-                            <td>2022</td>
-                            <td id="iot-certification">Click Here</td>
-                        </tr>
-                        <tr>
-                            <td>CyberSecurity Essentials (Cisco)</td>
-                            <td>1 Month</td>
-                            <td>2022</td>
-                            <td id="cybersecurity-certification">Click Here</td>
-                        </tr>
-                        <tr>
-                            <td>Fullstack Python (Coding Dojo)</td>
-                            <td>3 Months</td>
-                            <td>2023</td>
-                            <td id="fullstackpython-certification">Click Here</td>
-                        </tr>
-                        <tr>
-                            <td>Alura Latam ONE Backend SpringBot (Oracle)</td>
-                            <td>1 Year</td>
-                            <td>2025</td>
-                            <td>Not Yet (In Course)</td>
-                        </tr>
-                    </table>
+                    <div class="table-courses">
+                        <div class="course-card">
+                            <div class="course-info">
+                                <div class="course-name">IOT (Cisco)</div>
+                                <div class="course-details">
+                                    <div class="course-detail-item">
+                                        <i class="bi bi-clock"></i>
+                                        <span>1 Month</span>
+                                    </div>
+                                    <div class="course-detail-item">
+                                        <i class="bi bi-calendar"></i>
+                                        <span>2022</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="course-certificate" id="iot-certification">View Certificate</button>
+                        </div>
+                        <div class="course-card">
+                            <div class="course-info">
+                                <div class="course-name">CyberSecurity Essentials (Cisco)</div>
+                                <div class="course-details">
+                                    <div class="course-detail-item">
+                                        <i class="bi bi-clock"></i>
+                                        <span>1 Month</span>
+                                    </div>
+                                    <div class="course-detail-item">
+                                        <i class="bi bi-calendar"></i>
+                                        <span>2022</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="course-certificate" id="cybersecurity-certification">View Certificate</button>
+                        </div>
+                        <div class="course-card">
+                            <div class="course-info">
+                                <div class="course-name">Fullstack Python (Coding Dojo)</div>
+                                <div class="course-details">
+                                    <div class="course-detail-item">
+                                        <i class="bi bi-clock"></i>
+                                        <span>3 Months</span>
+                                    </div>
+                                    <div class="course-detail-item">
+                                        <i class="bi bi-calendar"></i>
+                                        <span>2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="course-certificate" id="fullstackpython-certification">View Certificate</button>
+                        </div>
+                        <div class="course-card">
+                            <div class="course-info">
+                                <div class="course-name">AI Results Quality Optimization (Alura Latam)</div>
+                                <div class="course-details">
+                                    <div class="course-detail-item">
+                                        <i class="bi bi-clock"></i>
+                                        <span>1 Month</span>
+                                    </div>
+                                    <div class="course-detail-item">
+                                        <i class="bi bi-calendar"></i>
+                                        <span>2025</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="course-certificate" id="alura-ia-certification">View Certificate</button>
+                        </div>
+                        <div class="course-card">
+                            <div class="course-info">
+                                <div class="course-name">Programming Logic with JavaScript (Alura Latam)</div>
+                                <div class="course-details">
+                                    <div class="course-detail-item">
+                                        <i class="bi bi-clock"></i>
+                                        <span>1 Month</span>
+                                    </div>
+                                    <div class="course-detail-item">
+                                        <i class="bi bi-calendar"></i>
+                                        <span>2025</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="course-certificate" id="alura-js-certification">View Certificate</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="panel-home-me-technical-knowledge">
                     <h3>What's are my Technical Knowledges?</h3>
@@ -266,7 +385,6 @@ function home_panel(isSpanish) {
                                 <li>C#</li>
                                 <li>PHP</li>
                             </ul>
-
                         </div>
                         <div class="infobox">
                             <h3><i class="fas fa-database"></i> Database</h3>
@@ -274,6 +392,16 @@ function home_panel(isSpanish) {
                                 <li>MySQL</li>
                                 <li>SQL Server</li>
                                 <li>PostgreSQL</li>
+                            </ul>
+                        </div>
+                        <div class="infobox">
+                            <h3> <i class="fa-solid fa-server"></i> Infrastructure</h3>
+                            <ul>
+                                <li>Management of Physical and Virtual Servers</li>
+                                <li>GCP & Azure</li>
+                                <li>Oracle Cloud</li>
+                                <li>Docker</li>
+                                <li>Network Configuration</li>
                             </ul>
                         </div>
                         <div class="infobox">
@@ -285,6 +413,15 @@ function home_panel(isSpanish) {
                                 <li>Flask</li>
                                 <li>Unity</li>
                                 <li>JWT</li>
+                            </ul>
+                        </div>
+                        <div class="infobox">
+                            <h3><i class="fas fa-brain"></i> AI & LLM</h3>
+                            <ul>
+                                <li>LLM understanding and use (GPT, Llama, etc.)</li>
+                                <li>Prompt engineering and response evaluation</li>
+                                <li>Fine-tuning and supervised training</li>
+                                <li>AI ethics and safety</li>
                             </ul>
                         </div>
                     </div>
