@@ -1,3 +1,6 @@
+// Cache para proyectos
+let projectsCache = {};
+
 $(document).ready(function() {
     const userLang = navigator.language || navigator.userLanguage;
     const isSpanish = userLang.toLowerCase().includes('es');
@@ -97,10 +100,26 @@ function home_panel(isSpanish) {
     const homePanelHTML =  isSpanish ? `
         <div class="panel-home-container">
             <div class="panel-home-content">
-                <h1>Hola, soy Benjamin Mora Urra</h1>
-                <em>Desarrollador Backend & FullStack Python</em>
-                <p>Soy un programador entusiasta, me gusta el frontend pero me apasiona más el backend, especialmente Java y C#</p>
-                <button class="btn-success btn-contactme">Contáctame</button>
+                <div class="panel-home-header">
+                    <div class="profile-photo-container">
+                        <img src="assets/imgs/profile.jpeg" 
+                             alt="Benjamin Mora Urra - Backend Developer" 
+                             class="profile-photo"
+                             loading="eager">
+                        <div class="profile-status">
+                            <i class="bi bi-circle-fill"></i> Disponible
+                        </div>
+                    </div>
+                    <div class="profile-info">
+                        <h1>Hola, soy Benjamin Mora Urra</h1>
+                        <em>Desarrollador Backend & FullStack Python</em>
+                        <p>Soy un programador entusiasta, me gusta el frontend pero me apasiona más el backend, especialmente Java y C#</p>
+                        <div class="profile-buttons">
+                            <button class="btn-success btn-contactme"><i class="bi bi-telephone-fill"></i> Contáctame</button>
+                            <button class="btn-secondary btn-download-cv"><i class="bi bi-download"></i> Descargar CV</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="panel-home-me">
                 <div class="panel-home-me-box">
@@ -266,11 +285,27 @@ function home_panel(isSpanish) {
     `:`
         <div class="panel-home-container">
             <div class="panel-home-content">
-                <h1>Hi, I'm Benjamin Mora Urra</h1>
-                <em>Backend Developer & FullStack Python</em>
-                <p>I am an enthusiastic programmer eager to learn, 
-                    I like the frontend but I am even more passionate about the backend, especially Java and C#</p>
-                <button class="btn-success btn-contactme">Contact me</button>
+                <div class="panel-home-header">
+                    <div class="profile-photo-container">
+                        <img src="assets/imgs/profile.webp" 
+                             alt="Benjamin Mora Urra - Backend Developer" 
+                             class="profile-photo"
+                             loading="eager">
+                        <div class="profile-status">
+                            <i class="bi bi-circle-fill"></i> Available
+                        </div>
+                    </div>
+                    <div class="profile-info">
+                        <h1>Hi, I'm Benjamin Mora Urra</h1>
+                        <em>Backend Developer & FullStack Python</em>
+                        <p>I am an enthusiastic programmer eager to learn, 
+                            I like the frontend but I am even more passionate about the backend, especially Java and C#</p>
+                        <div class="profile-buttons">
+                            <button class="btn-success btn-contactme"><i class="bi bi-telephone-fill"></i> Contact me</button>
+                            <button class="btn-secondary btn-download-cv"><i class="bi bi-download"></i> Download CV</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="panel-home-me">
                 <div class="panel-home-me-box">
@@ -447,49 +482,172 @@ function projects_panel(isSpanish) {
     const headerHTML = isSpanish
         ? `<div class="panel-projects-info">
                 <h1>Proyectos</h1>
-                <p>Aquí puedes ver todos los proyectos que he desarrollado, también puedes ver el código de cada uno de ellos en mi repositorio de Github.</p>
+                <p>Aquí puedes ver mis proyectos más destacados que demuestran mis habilidades técnicas y experiencia profesional.</p>
            </div>`
         : `<div class="panel-projects-info">
                 <h1>Projects</h1>
-                <p>Here you can see all the projects that I have developed, you can also see the code of each one of them in my Github repository.</p>
+                <p>Here you can see my featured projects that demonstrate my technical skills and professional experience.</p>
            </div>`;
 
+    // Mostrar skeleton loaders mientras carga
     projectsPanel.innerHTML = `
         <div class="panel-projects-container">
             ${headerHTML}
-            <div class="panel-projects-list"></div>
+            <div class="featured-projects-section">
+                <h2 class="section-title">
+                    <i class="bi bi-star-fill"></i> ${isSpanish ? 'Proyectos Destacados' : 'Featured Projects'}
+                </h2>
+                <div class="featured-projects-list">
+                    <div class="project-card-skeleton"></div>
+                    <div class="project-card-skeleton"></div>
+                </div>
+            </div>
+            <div class="other-projects-section">
+                <h2 class="section-title">
+                    <i class="bi bi-grid-3x3-gap"></i> ${isSpanish ? 'Otros Proyectos' : 'Other Projects'}
+                </h2>
+                <div class="other-projects-list">
+                    <div class="project-card-skeleton compact"></div>
+                    <div class="project-card-skeleton compact"></div>
+                    <div class="project-card-skeleton compact"></div>
+                </div>
+            </div>
         </div>
     `;
 
-    // Cargar proyectos dinámicamente
-    fetch(jsonPath)
-        .then(response => response.json())
-        .then(projects => {
-            const list = projectsPanel.querySelector('.panel-projects-list');
-            list.innerHTML = ''; // Limpiar antes de agregar
+    // Verificar cache primero
+    if (projectsCache[lang]) {
+        renderProjects(projectsCache[lang], isSpanish, projectsPanel);
+        return;
+    }
 
-            projects.forEach(project => {
-                list.innerHTML += `
-                    <div class="project-card">
-                        <img src="${project.image}" alt="${project.title}" class="project-card-img">
-                        <div class="project-info">
-                            <h2>${project.title} <em>${project.subtitle || ''}</em></h2>
-                            <p>${project.description}</p>
-                            <div class="project-card-technologys">
-                                ${project.technologys.map(tech => `<span class="project-card-technology">${tech}</span>`).join('')}
-                            </div>
-                            <div class="project-card-btns">
-                                ${project.demo ? `<button class="btn-success" onclick="window.open('${project.demo}', '_blank')">${isSpanish ? 'Ver Demo' : 'View Demo'}</button>` : ''}
-                                ${project.repo ? `<button class="btn-primary" onclick="window.open('${project.repo}', '_blank')">${isSpanish ? 'Código Fuente' : 'Source Code'}</button>` : ''}
-                            </div>
-                        </div>
-                    </div>
-                `;
-            });
+    // Si no está en cache, hacer fetch
+    fetch(jsonPath)
+        .then(response => {
+            if (!response.ok) throw new Error('Failed to load projects');
+            return response.json();
+        })
+        .then(projects => {
+            projectsCache[lang] = projects; // Guardar en cache
+            renderProjects(projects, isSpanish, projectsPanel);
         })
         .catch(error => {
-            const list = projectsPanel.querySelector('.panel-projects-list');
-            list.innerHTML = `<p style="color:red">${isSpanish ? 'No se pudieron cargar los proyectos.' : 'Failed to load projects.'}</p>`;
             console.error(error);
+            projectsPanel.querySelector('.featured-projects-section').innerHTML = `
+                <div class="error-state">
+                    <i class="bi bi-exclamation-triangle"></i>
+                    <p>${isSpanish ? 'Error al cargar proyectos. Por favor, intenta de nuevo.' : 'Failed to load projects. Please try again.'}</p>
+                    <button class="btn-primary" onclick="location.reload()">
+                        ${isSpanish ? 'Reintentar' : 'Retry'}
+                    </button>
+                </div>
+            `;
         });
+}
+
+// Función auxiliar para renderizar proyectos
+function renderProjects(projects, isSpanish, projectsPanel) {
+    const featuredSection = projectsPanel.querySelector('.featured-projects-section');
+    const otherSection = projectsPanel.querySelector('.other-projects-section');
+    
+    // Separar proyectos destacados y otros
+    const featuredProjects = projects.filter(p => p.featured === true);
+    const otherProjects = projects.filter(p => p.featured !== true);
+
+    // Renderizar Featured Projects
+    if (featuredProjects.length > 0) {
+        featuredSection.innerHTML = `
+            <h2 class="section-title">
+                <i class="bi bi-star-fill"></i> ${isSpanish ? 'Proyectos Destacados' : 'Featured Projects'}
+            </h2>
+            <div class="featured-projects-list"></div>
+        `;
+        
+        const featuredList = featuredSection.querySelector('.featured-projects-list');
+        featuredProjects.forEach(project => {
+            featuredList.innerHTML += `
+                <div class="project-card featured">
+                    <div class="featured-badge">
+                        <i class="bi bi-star-fill"></i> ${isSpanish ? 'Destacado' : 'Featured'}
+                    </div>
+                    <img src="${project.image}" 
+                         alt="${project.title}" 
+                         class="project-card-img"
+                         loading="lazy">
+                    <div class="project-info">
+                        <h2>${project.title} <em>${project.subtitle || ''}</em></h2>
+                        ${project.role ? `<p class="project-role"><i class="bi bi-person-badge"></i> <strong>${isSpanish ? 'Rol:' : 'Role:'}</strong> ${project.role}</p>` : ''}
+                        <p>${project.description}</p>
+                        ${project.impact ? `<p class="project-impact"><i class="bi bi-graph-up-arrow"></i> <strong>${isSpanish ? 'Impacto:' : 'Impact:'}</strong> ${project.impact}</p>` : ''}
+                        <div class="project-card-technologys">
+                            ${project.technologys.map(tech => `<span class="project-card-technology">${tech}</span>`).join('')}
+                        </div>
+                        <div class="project-card-btns">
+                            ${project.documentation ? `<button class="btn-info" onclick="window.open('${project.documentation}', '_blank')"><i class="bi bi-file-earmark-pdf"></i> ${isSpanish ? 'Presentación' : 'Presentation'}</button>` : ''}
+                            ${project.demo ? `<button class="btn-success" onclick="window.open('${project.demo}', '_blank')"><i class="bi bi-box-arrow-up-right"></i> ${isSpanish ? 'Ver Demo' : 'View Demo'}</button>` : ''}
+                            ${project.repo ? (Array.isArray(project.repo) ? 
+                                project.repo.map((repoUrl, index) => {
+                                    const repoLabel = project.repoNames && project.repoNames[index] ? project.repoNames[index] : `Repo ${index + 1}`;
+                                    return `<button class="btn-primary" onclick="window.open('${repoUrl}', '_blank')"><i class="bi bi-github"></i> ${repoLabel}</button>`;
+                                }).join('') : 
+                                `<button class="btn-primary" onclick="window.open('${project.repo}', '_blank')"><i class="bi bi-github"></i> ${isSpanish ? 'Código' : 'Code'}</button>`) : ''}
+                        </div>
+                    </div>
+                </div>
+            `;
+        });
+    }
+
+    // Renderizar Other Projects
+    if (otherProjects.length > 0) {
+        otherSection.innerHTML = `
+            <h2 class="section-title">
+                <i class="bi bi-grid-3x3-gap"></i> ${isSpanish ? 'Otros Proyectos' : 'Other Projects'}
+            </h2>
+            <div class="other-projects-list"></div>
+        `;
+        
+        const otherList = otherSection.querySelector('.other-projects-list');
+        otherProjects.forEach(project => {
+            otherList.innerHTML += `
+                <div class="project-card compact">
+                    <img src="${project.image}" 
+                         alt="${project.title}" 
+                         class="project-card-img"
+                         loading="lazy">
+                    <div class="project-info">
+                        <h3>${project.title} <em>${project.subtitle || ''}</em></h3>
+                        ${project.role ? `<p class="project-role-compact"><strong>${project.role}</strong></p>` : ''}
+                        <p class="project-desc-short">${project.description}</p>
+                        <div class="project-card-technologys">
+                            ${project.technologys.slice(0, 4).map(tech => `<span class="project-card-technology">${tech}</span>`).join('')}
+                            ${project.technologys.length > 4 ? `<span class="project-card-technology">+${project.technologys.length - 4}</span>` : ''}
+                        </div>
+                        <div class="project-card-btns">
+                            ${project.documentation ? `<button class="btn-info-sm" onclick="window.open('${project.documentation}', '_blank')"><i class="bi bi-file-earmark-pdf"></i></button>` : ''}
+                            ${project.demo ? `<button class="btn-success-sm" onclick="window.open('${project.demo}', '_blank')"><i class="bi bi-box-arrow-up-right"></i></button>` : ''}
+                            ${project.repo ? (Array.isArray(project.repo) ? 
+                                project.repo.map(repoUrl => `<button class="btn-primary-sm" onclick="window.open('${repoUrl}', '_blank')"><i class="bi bi-github"></i></button>`).join('') : 
+                                `<button class="btn-primary-sm" onclick="window.open('${project.repo}', '_blank')"><i class="bi bi-github"></i></button>`) : ''}
+                        </div>
+                    </div>
+                </div>
+            `;
+        });
+    }
+
+    // Intersection Observer para animaciones al scroll
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in-view');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    // Observar todas las project cards
+    document.querySelectorAll('.project-card').forEach(card => {
+        observer.observe(card);
+    });
 }

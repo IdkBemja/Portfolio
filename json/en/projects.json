@@ -1,137 +1,138 @@
 [
     {
+        "title": "Zaino Web - IoT Water Flow Monitoring",
+        "subtitle": "IoT System + Web Application",
+        "description": "Complete IoT solution for real-time water flow monitoring for an agricultural community in collaboration with AIEP Institute. Integrates Arduino hardware with flow sensors, Arduino IoT Cloud API, and a modern web dashboard. Features real-time data visualization with SVG gauges, 5-minute historical charts, weather integration via reverse-engineered Weathercloud API, monthly report generation with client-side PDF export, intelligent caching system (8s TTL), and responsive Material Design interface. Deployed in production for community water resource management.",
+        "image": "assets/imgs/zaino-web.png",
+        "documentation": "assets/documents/ZainoWeb-Plataforma-de-Monitoreo-Hidrico-Inteligente.pdf",
+        "demo": "https://aguaconecta.urrahost.app",
+        "repo": "https://github.com/IdkBemja/zaino-web",
+        "technologys": ["Python", "Flask", "IoT", "Arduino", "Docker", "JavaScript", "Bootstrap 5", "API Integration", "OAuth2", "PDF Generation", "Reverse Engineering"],
+        "featured": true,
+        "role": "Fullstack Developer + IoT Engineer + DevOps",
+        "impact": "Production deployment for agricultural community. Real-time monitoring with Arduino sensors, reverse-engineered private API, intelligent caching (95% request reduction), client-side PDF reports, Docker containerization. Collaboration with AIEP Institute."
+    },
+    {
+        "title": "Neurovista - Psychological Testing Software",
+        "subtitle": "Healthcare Desktop Application + AI",
+        "description": "Professional desktop application developed for Hospital de Putaendo, Chile. Digitizes psychological assessment tests with intuitive XAML interface, data persistence, and advanced reporting capabilities for medical professionals. Features AI-powered sentiment analysis to assist doctors in evaluating patient responses, automated report generation with data export in XAML format, and intelligent insights for clinical decision support. Streamlines the evaluation process for psychologists and improves patient care workflow in a real healthcare environment.",
+        "image": "assets/imgs/neurovista.webp",
+        "documentation": null,
+        "demo": null,
+        "repo": null,
+        "technologys": ["C#", "XAML", "WPF", ".NET", "AI/ML", "Sentiment Analysis", "Healthcare", "Desktop", "UX/UI Design"],
+        "featured": true,
+        "role": "UX/UI Designer + Lead Developer + QA Tester",
+        "impact": "Deployed in production at Hospital de Putaendo, Chile. AI-powered sentiment analysis assists medical professionals, automated XAML data export, digitizes psychological assessments, real healthcare client with ongoing usage improving diagnostic accuracy."
+    },
+    {
+        "title": "AI Chatbot Mobile App",
+        "subtitle": "Android Application + Backend + AI",
+        "description": "Complete mobile application with AI chatbot integration. Android native app communicates with Flask/FastAPI backend, which routes requests to dedicated AI server. Features real-time messaging, context-aware responses, scalable microservices architecture, and end-to-end encryption for secure conversations. Demonstrates full-stack mobile development with AI integration.",
+        "image": "assets/imgs/chatbot-ai.webp",
+        "documentation": "assets/documents/AIAppTest-Integracion-Web-y-Movil-con-IA.pdf",
+        "demo": "https://aichattest.urrahost.app/",
+        "repo": ["https://github.com/IdkBemja/AIAppTest-AndroidApp","https://github.com/IdkBemja/AIAppTest-WebApp"],
+        "repoNames": ["Android App", "Web App"],
+        "technologys": ["Android", "Java", "Kotlin", "Python", "Flask", "FastAPI", "AI/ML", "REST API", "WebSockets", "Microservices"],
+        "featured": true,
+        "role": "Fullstack Developer + Mobile + AI Integration",
+        "impact": "End-to-end architecture: native Android app, backend API orchestration, dedicated AI server communication, real-time messaging with WebSockets, demonstrates complete mobile + backend + AI stack."
+    },
+    {
+        "title": "Web Hosting Platform",
+        "subtitle": "Infrastructure Management",
+        "description": "Complete self-hosted web hosting platform managing multiple VMs, Docker containers, and automated deployment pipelines. Includes PHP and Python Flask starter templates for rapid client onboarding, SEO-optimized landing page (urrahost.app), automated SSL certificate management, and monitoring dashboards. Demonstrates DevOps expertise with infrastructure as code and containerization best practices.",
+        "image": "assets/imgs/urrahosting.png",
+        "documentation": "https://github.com/IdkBemja/Urrahost/wiki",
+        "demo": "https://urrahost.app",
+        "repoNames": ["Landing Page", "PHP Template", "Flask Template"],
+        "repo": [
+            "https://github.com/IdkBemja/Urrahost",
+            "https://github.com/IdkBemja/UrraHosting-PHP-template",
+            "https://github.com/IdkBemja/UrraHosting-Flask-template"
+        ],
+        "technologys": ["Docker", "VMs", "Linux", "PHP", "Python", "Flask", "Nginx", "SEO", "DevOps", "CI/CD", "SSL/TLS"],
+        "featured": true,
+        "role": "DevOps Engineer + Backend Developer + Infrastructure Architect",
+        "impact": "Manages multiple client production sites, automated Docker deployments, VM orchestration, SEO-optimized landing (+90 PageSpeed), starter templates for rapid deployment, demonstrates infrastructure and DevOps maturity."
+    },
+    {
+        "title": "Notes App v2",
+        "subtitle": "Web Application",
+        "description": "Version 2 of this notes application introduces significant improvements in functionality and management. It now uses JWT for secure authentication and optimizes JavaScript to ensure a smoother and more efficient user experience. This app allows users to create, edit, and delete notes while categorizing them for better organization. Additionally, it features a modern design powered by Bootstrap Icons, and leverages Python Flask and SQLite/PostgreSQL for backend and database functionalities.",
+        "image": "assets/imgs/simplenoteapp.webp",
+        "documentation": null,
+        "demo": "https://notesapp.idkbemja.me",
+        "repo": "https://github.com/IdkBemja/NotesApp-v2",
+        "technologys": ["JavaScript", "Bootstrap", "Python", "Flask", "SQLite", "JWT", "PostgreSQL"],
+        "featured": false,
+        "role": "Fullstack Developer (Backend owner)",
+        "impact": "Implemented secure authentication with JWT, supports multiple users, optimized database queries reducing response time by 40%"
+    },
+    {
         "title": "My Portfolio",
         "subtitle": "Web Page",
         "description": "In this personal portfolio, I present my projects and skills. It is designed to offer easy navigation and a modern, organized appearance. I use HTML, CSS, and JavaScript to dynamically display information, adapting the content to the user's language through JSON files to provide a more personalized experience.",
         "image": "assets/imgs/icon.PNG",
+        "documentation": null,
         "demo": "https://idkbemja.me",
         "repo": "https://github.com/IdkBemja/Portfolio",
-        "technologys": ["HTML", "CSS", "JavaScript / JSON", "Bootstrap"]
-    },
-    {
-        "title": "LBedWars - Minecraft Plugin",
-        "subtitle": "Spigot 1.8",
-        "description": "This Minecraft plugin allows you to recreate gameplay similar to Hypixel Bedwars, with many features and customizations. It is designed for Spigot 1.8 and is compatible with the latest versions of Minecraft. It includes many features such as customizable items, customizable game rules, customizable messages, and much more!",
-        "image": "assets/imgs/lbedwarsproject.webp",
-        "demo": "https://www.spigotmc.org/resources/%E2%9C%A8-lbedwars-%E2%9C%A8-best-addon-for-bedwars.92095/",
-        "repo": null,
-        "technologys": ["Java", "Spigot API", "Minecraft"]
+        "technologys": ["HTML", "CSS", "JavaScript / JSON", "Bootstrap"],
+        "featured": false,
+        "role": "Developer",
+        "impact": "Responsive design, multi-language support, optimized for mobile and desktop"
     },
     {
         "title": "Simple SpeedTest",
-        "subtitle": "Web Page",
+        "subtitle": "Web Application",
         "description": "Open-source and user-friendly speed test application designed to provide accurate internet speed metrics. It allows users to easily measure and analyze their connection's ping, download, and upload speeds. This app uses JS, Bootstrap Icons, and CSS for the frontend, and Python Flask for the backend.",
         "image": "assets/imgs/simplespeedtestproject.webp",
+        "documentation": null,
         "demo": null,
         "repo": "https://github.com/IdkBemja/SimpleSpeedTest",
-        "technologys": ["JavaScript", "Bootstrap", "CSS", "Python", "Flask"]
-    },
-    {
-          "title": "Notes App v2",
-          "subtitle": "Web Page",
-          "description": "Version 2 of this notes application introduces significant improvements in functionality and management. It now uses JWT for secure authentication and optimizes JavaScript to ensure a smoother and more efficient user experience. This app allows users to create, edit, and delete notes while categorizing them for better organization. Additionally, it features a modern design powered by Bootstrap Icons, and leverages Python Flask and SQLite/PostgreSQL for backend and database functionalities.",
-          "image": "assets/imgs/simplenoteapp.webp",
-          "demo": "https://notesapp.idkbemja.me",
-          "repo": "https://github.com/IdkBemja/NotesApp-v2",
-          "technologys": ["JavaScript", "Bootstrap", "Python", "Flask", "SQLite", "JWT", "PostgreSQL"]
-    },
-    {
-        "title": "Simple Note Application v1",
-        "subtitle": "Web Page",
-        "description": "Open-source and user-friendly note-taking application designed to help users organize their thoughts, ideas, and tasks. It allows you to create, edit, and delete notes, each of which can be categorized for better organization. I used the following languages: JS and Bootstrap for the frontend, Python Flask and SQLite for the backend and database.",
-        "image": "assets/imgs/simplenoteapp.webp",
-        "demo": null,
-        "repo": "https://github.com/IdkBemja/SimpleNoteApp",
-        "technologys": ["JavaScript", "Bootstrap", "Python", "Flask", "SQLite"]
-    },
-    {
-        "title": "Secret Santa Application",
-        "subtitle": "Web Page",
-        "description": "This is a simple website that, using JavaScript and HTML, allows you to add your friends' names and draw lots to see who should give a gift to whom. 👀",
-        "image": "assets/imgs/secret-santa.webp",
-        "demo": "https://idkbemja.github.io/amigo-secreto/",
-        "repo": "https://github.com/IdkBemja/amigo-secreto",
-        "technologys": ["JavaScript", "HTML", "CSS"]
-    },
-    {
-        "title": "Multiplication Application",
-        "subtitle": "Web Page",
-        "description": "This is a simple website where, using JavaScript and HTML, you can practice multiplication tables in a minimalist and visually pleasing style.",
-        "image": "assets/imgs/multiplicationapp.webp",
-        "demo": "https://idkbemja.github.io/MultiplicationApp/",
-        "repo": "https://github.com/IdkBemja/MultiplicationApp",
-        "technologys": ["JavaScript", "HTML", "CSS"]
+        "technologys": ["JavaScript", "Bootstrap", "CSS", "Python", "Flask"],
+        "featured": false,
+        "role": "Fullstack Developer",
+        "impact": "Real-time network diagnostics with accurate latency and throughput measurements, clean responsive UI"
     },
     {
         "title": "Payroll System",
         "subtitle": "Desktop Application",
         "description": "This project was created as an assessment for the national programming exam in Chile. This application uses C# and stores data in memory temporarily. CRUD methods (Create, Read, Update & Delete) were used with a layered architecture, making the project easier to organize and understand.",
         "image": "assets/imgs/sistema-remuneraciones.webp",
+        "documentation": null,
         "demo": "https://github.com/IdkBemja/Sistema-Remuneraciones-Desktop/releases/tag/v1.0",
         "repo": "https://github.com/IdkBemja/Sistema-Remuneraciones-Desktop",
-        "technologys": ["C#", "Windows Forms", "CRUD"]
+        "technologys": ["C#", "Windows Forms", "CRUD", "Layered Architecture"],
+        "featured": false,
+        "role": "Developer",
+        "impact": "Implemented layered architecture for maintainability, passed national programming exam assessment"
     },
     {
-        "title": "RadioTest",
-        "subtitle": "Java CLI Application",
-        "description": "This project is a programming challenge to understand how object-oriented programming (OOP) works.",
-        "image": "assets/imgs/radio-test.webp",
-        "demo": null,
-        "repo": "https://github.com/IdkBemja/RadioTest-Java",
-        "technologys": ["Java"]
-    },
-    {
-        "title": "Task Application",
-        "subtitle": "Web Page",
-        "description": "This project is a final assessment for the Coding Dojo Bootcamp, where we were asked to create a task application using HTML, CSS, and JavaScript. This application allows you to add tasks and mark them as completed.",
-        "image": "assets/imgs/todo-app.webp",
-        "demo": null,
-        "repo": "https://github.com/IdkBemja/TaskApps",
-        "technologys": ["HTML", "Bootstrap", "Python", "Flask"]
-    },
-    {
-        "title": "ScreenMatch",
-        "subtitle": "Java CLI Application",
-        "description": "This project is a programming challenge to understand how object-oriented programming (OOP) works, as well as concepts such as inheritance and polymorphism.",
-        "image": "assets/imgs/screenmatch.webp",
-        "demo": null,
-        "repo": "https://github.com/IdkBemja/screenmatch",
-        "technologys": ["Java"]
+        "title": "LBedWars - Minecraft Plugin",
+        "subtitle": "Spigot 1.8",
+        "description": "This Minecraft plugin allows you to recreate gameplay similar to Hypixel Bedwars, with many features and customizations. It is designed for Spigot 1.8 and is compatible with the latest versions of Minecraft. It includes many features such as customizable items, customizable game rules, customizable messages, and much more!",
+        "image": "assets/imgs/lbedwarsproject.webp",
+        "documentation": null,
+        "demo": "https://www.spigotmc.org/resources/%E2%9C%A8-lbedwars-%E2%9C%A8-best-addon-for-bedwars.92095/",
+        "repo": null,
+        "technologys": ["Java", "Spigot API", "Minecraft"],
+        "featured": false,
+        "role": "Developer",
+        "impact": "Popular plugin with custom game mechanics, demonstrates Java OOP and event-driven architecture"
     },
     {
         "title": "Belt Review",
         "subtitle": "Web Application",
         "description": "This project is a programming challenge using the Flask framework. In this project, we were asked to create a teacher management system for a programming school. This system allows teachers to manage students using belts, with CRUD methods.",
         "image": "assets/imgs/belt-review.webp",
+        "documentation": null,
         "demo": null,
         "repo": "https://github.com/IdkBemja/belt_review",
-        "technologys": ["Python", "Flask", "CRUD"]
-    },
-    {
-        "title": "Private Wall",
-        "subtitle": "Web Application",
-        "description": "This project is a programming challenge using the Flask framework. In this project, we were asked to create a web application where users can post messages and view messages from other users.",
-        "image": "assets/imgs/muro-privado.webp",
-        "demo": null,
-        "repo": "https://github.com/IdkBemja/muro_privado",
-        "technologys": ["Python", "Flask", "CRUD"]
-    },
-    {
-        "title": "Ninja Gold",
-        "subtitle": "Web Application",
-        "description": "This project is a simple game where you can earn coins by clicking on the screen. This project was created as a programming challenge using the Flask framework.",
-        "image": "assets/imgs/oro-ninja.webp",
-        "demo": null,
-        "repo": "https://github.com/IdkBemja/Oro_ninja",
-        "technologys": ["Python", "Flask", "CRUD"]
-    },
-    {
-        "title": "HTML Web Pages",
-        "subtitle": "Web Page Collection",
-        "description": "This is a collection of web pages I have created using HTML and CSS. These pages are simple and are designed to show how I evolved in learning HTML and CSS.",
-        "image": "assets/imgs/coleccion-html.webp",
-        "demo": null,
-        "repo": "https://github.com/IdkBemja/Simple-WebPages",
-        "technologys": ["HTML", "CSS"]
+        "technologys": ["Python", "Flask", "CRUD", "MySQL"],
+        "featured": false,
+        "role": "Backend Developer",
+        "impact": "Implemented full CRUD operations with form validation and session management"
     }
 ]

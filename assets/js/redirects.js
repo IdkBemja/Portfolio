@@ -27,5 +27,20 @@ $(document).ready(function() {
 
     $(document).on('click', '.btn-contactme', function() {
         window.open("https://www.linkedin.com/in/idkbemja/", "_blank");
-    }); 
+    });
+
+    // Download CV button //
+    $(document).on('click', '.btn-download-cv', function() {
+        // Detectar idioma
+        const userLang = navigator.language || navigator.userLanguage;
+        const isSpanish = userLang.toLowerCase().includes('es');
+        
+        // Ruta del CV según idioma
+        const cvPath = isSpanish 
+            ? "assets/documents/CV-BenjaminMoraUrra-ES.pdf"
+            : "assets/documents/CV-BenjaminMoraUrra-ES.pdf";
+        
+        // Abrir CV en nueva pestaña
+        window.open(cvPath, "_blank");
+    });
 });
