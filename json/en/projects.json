@@ -17,7 +17,7 @@
         "subtitle": "Healthcare Desktop Application + AI",
         "description": "Professional desktop application developed for Hospital de Putaendo, Chile. Digitizes psychological assessment tests with intuitive XAML interface, data persistence, and advanced reporting capabilities for medical professionals. Features AI-powered sentiment analysis to assist doctors in evaluating patient responses, automated report generation with data export in XAML format, and intelligent insights for clinical decision support. Streamlines the evaluation process for psychologists and improves patient care workflow in a real healthcare environment.",
         "image": "assets/imgs/neurovista.webp",
-        "documentation": null,
+        "documentation": "assets/documents/Neurovista-Software-de-Test-Psicológico.pdf",
         "demo": null,
         "repo": null,
         "technologys": ["C#", "XAML", "WPF", ".NET", "AI/ML", "Sentiment Analysis", "Healthcare", "Desktop", "UX/UI Design"],
