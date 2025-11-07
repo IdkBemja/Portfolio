@@ -45,7 +45,7 @@
         "description": "Plataforma completa de hosting web autogestionada que administra múltiples VMs, contenedores Docker y pipelines de despliegue automatizado. Incluye plantillas iniciales PHP y Python Flask para onboarding rápido de clientes, landing page optimizado para SEO (urrahost.app), gestión automatizada de certificados SSL, y dashboards de monitoreo. Demuestra experiencia en DevOps con infraestructura como código y mejores prácticas de contenerización.",
         "image": "assets/imgs/urrahosting.png",
         "documentation": "https://github.com/IdkBemja/Urrahost/wiki",
-        "demo": "https://urrahost.app",
+        "demo": "https://urrahosting.cl",
         "repoNames": ["Landing Page", "Template PHP", "Template Flask"],
         "repo": [
             "https://github.com/IdkBemja/Urrahost",
