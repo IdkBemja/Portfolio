@@ -322,7 +322,7 @@ function home_panel(isSpanish) {
             <div class="panel-home-content">
                 <div class="panel-home-header">
                     <div class="profile-photo-container">
-                        <img src="assets/imgs/profile.webp" 
+                        <img src="assets/imgs/profile.jpeg" 
                              alt="Benjamin Mora Urra - Backend Developer" 
                              class="profile-photo"
                              loading="eager">
@@ -333,23 +333,20 @@ function home_panel(isSpanish) {
                     <div class="profile-info">
                         <h1>Hi, I'm Benjamin Mora Urra</h1>
                         <em>Backend Developer & FullStack Python</em>
-                        <p>I am an enthusiastic programmer eager to learn, 
-                            I like the frontend but I am even more passionate about the backend, especially Java and C#</p>
+                        <p>"Debugging is like being the detective at a crime scene, where you can also be the killer."</p>
                         <div class="profile-buttons">
                             <button class="btn-success btn-contactme"><i class="bi bi-telephone-fill"></i> Contact me</button>
-                            <button class="btn-secondary btn-download-cv"><i class="bi bi-download"></i> Download CV</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="panel-home-me">
                 <div class="panel-home-me-box">
-                    <h3>Who am i?</h3>
-                    <p>I am a young programmer who is passionate about technology, I am always looking for new challenges and learning new things, I am a fullstack developer, but focused on backend.</p>
-                    <p>I am currently in my final year studying Professional Technician in Programming and Systems Analysis at the AIEP Professional Institute. I am looking for new challenges and have almost 2 years of experience in this field. I started in 2017 creating plugins for Minecraft and learning Java. Later, I studied telecommunications at the Liceo Comercial Los Andes.</p>
+                    <h3>Who am I?</h3>
+                    <p>I am a Backend Developer and Fullstack specialist in Python (Flask, FastAPI) with +2 years of professional experience and a software development track record since 2017. Proven experience designing and deploying multi-tenant SaaS platforms, microservices with Docker, and REST APIs in production. I have led end-to-end projects for hosting, agriculture, IoT, and healthcare sectors, including self-hosted corporate email infrastructure, payment gateways with webhook integration, and real-time monitoring systems. Proficiency in PostgreSQL, MySQL, JWT, RBAC, CI/CD, and Linux. I optimized external API consumption reducing requests by 95% through smart caching and implemented reverse engineering of private undocumented APIs. Currently in my third year of Computer Science Engineering with a focus on Software Development (AIEP).</p>
                 </div>
                 <div class="panel-home-me-courses">
-                    <p>I have Alot of Technology Courses, like:</p>
+                    <p>I have many technology courses, like:</p>
                     <div class="table-courses">
                         <div class="course-card">
                             <div class="course-info">
@@ -434,7 +431,7 @@ function home_panel(isSpanish) {
                     </div>
                 </div>
                 <div class="panel-home-me-technical-knowledge">
-                    <h3>What's are my Technical Knowledges?</h3>
+                    <h3>What are my Technical Knowledge?</h3>
                     <p>I have a lot of knowledge in programming languages, like:</p>
                     <div class="technical-knowledge">
                         <div class="infobox">
@@ -536,7 +533,7 @@ function home_panel(isSpanish) {
 
                 <div class="panel-home-btns">
                     <h3>Want to see my projects?</h3>
-                    <p>If you are interested on my proyects or just want to contact me click these following buttons</p>
+                    <p>If you are interested in my projects or just want to contact me, click these following buttons</p>
                     <button class="btn-primary" id="btn-projects"><i class="bi bi-github"></i> Projects</button>
                     <button class="btn-success btn-contactme"><i class="bi bi-telephone-fill"></i> Contact Me</button>
                 </div>
