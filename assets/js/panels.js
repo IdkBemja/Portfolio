@@ -113,10 +113,9 @@ function home_panel(isSpanish) {
                     <div class="profile-info">
                         <h1>Hola, soy Benjamin Mora Urra</h1>
                         <em>Desarrollador Backend & FullStack Python</em>
-                        <p>Soy un programador entusiasta, me gusta el frontend pero me apasiona más el backend, especialmente Java y C#</p>
+                        <p>"Depurar es como ser el detective en una escena de crimen, donde tu también puedes ser el asesino."</p>
                         <div class="profile-buttons">
                             <button class="btn-success btn-contactme"><i class="bi bi-telephone-fill"></i> Contáctame</button>
-                            <button class="btn-secondary btn-download-cv"><i class="bi bi-download"></i> Descargar CV</button>
                         </div>
                     </div>
                 </div>
@@ -124,8 +123,7 @@ function home_panel(isSpanish) {
             <div class="panel-home-me">
                 <div class="panel-home-me-box">
                     <h3>¿Quién soy?</h3>
-                    <p>Soy un joven programador apasionado por la tecnología, siempre buscando nuevos desafíos y aprendiendo cosas nuevas, soy desarrollador fullstack, pero enfocado en backend.</p>
-                    <p>Actualmente estoy en mi ultimo año estudiando Técnico profesional en programación y analisis de sistemas en el Instituto Profesional AIEP, estoy buscando nuevos desafíos y con casi 2 años de experiencia en esto. Comencé en 2017 creando plugins para Minecraft y entendiendo Java. Luego estudié telecomunicaciones en el Liceo Comercial Los Andes.</p>
+                    <p>Soy Desarrollador Backend y Fullstack especializado en Python (Flask, FastAPI) con +2 años de experiencia profesional y trayectoria en desarrollo de software desde 2017. Experiencia comprobada diseñando y desplegando plataformas SaaS multi-tenant, microservicios con Docker, y APIs RESTen producción. He liderado proyectos end-to-end para sectores de hosting, agricultura e IoT y salud, incluyendo infraestructura de correo corporativo self-hosted, pasarelas de pago con integración de webhooks, y sistemas de monitoreo en tiempo real. Dominio de PostgreSQL, MySQL, JWT, RBAC, CI/CD y Linux. Optimicé consumo de APIs externas reduciendo un 95% las peticiones mediante caché inteligente e implementé ingeniería inversa de APIs privadas sin documentación. Actualmente cursando Tercer año de Ingeniería en informática con Mención en Desarrollo de Software (AIEP).</p>
                 </div>
                 <div class="panel-home-me-courses">
                     <p>Tengo muchos cursos de tecnología, como:</p>
@@ -244,24 +242,61 @@ function home_panel(isSpanish) {
                             </ul>
                         </div>
                         <div class="infobox">
-                            <h3> <i class="fa-solid fa-server"></i> Infraestructura</h3>
+                            <h3> <i class="fa-solid fa-server"></i> DevOps & Infraestructura</h3>
                             <ul>
-                                <li>Administración de Servidores Fisicos y Virtuales</li>
-                                <li>GCP & Azure</li>
-                                <li>Oracle Cloud</li>
-                                <li>Docker</li>
+                                <li>Administración de Servidores (Físicos/Virtuales)</li>
+                                <li>GCP, Azure & Oracle Cloud</li>
+                                <li>Docker & Docker Compose</li>
+                                <li>Nginx & Postfix/Dovecot</li>
+                                <li>Redis (Caché Inteligente)</li>
+                                <li>IoT & Arduino</li>
+                                <li>CI/CD Automation</li>
                                 <li>Configuración de Redes</li>
                             </ul>
                         </div>
                         <div class="infobox">
-                            <h3> <i class="fab fa-git"></i> Otros</h3>
+                            <h3><i class="fab fa-mobile"></i> Desarrollo Móvil</h3>
                             <ul>
-                                <li>Git</li>
-                                <li>Github</li>
+                                <li>Android (Java/Kotlin)</li>
+                                <li>REST APIs</li>
+                                <li>WebSockets</li>
+                                <li>Arquitectura FullStack</li>
+                            </ul>
+                        </div>
+                        <div class="infobox">
+                            <h3><i class="fas fa-cube"></i> Microservicios</h3>
+                            <ul>
+                                <li>Arquitectura de Microservicios</li>
+                                <li>Integración de APIs</li>
+                                <li>Reverse Engineering</li>
+                                <li>OAuth2</li>
+                            </ul>
+                        </div>
+                        <div class="infobox">
+                            <h3><i class="fas fa-lock"></i> Seguridad & Encriptación</h3>
+                            <ul>
+                                <li>JWT & RBAC</li>
+                                <li>Argon2, Fernet, HMAC</li>
+                                <li>Email Services (OpenDKIM)</li>
+                                <li>Certificados SSL/TLS</li>
+                            </ul>
+                        </div>
+                        <div class="infobox">
+                            <h3><i class="fas fa-credit-card"></i> Integraciones Específicas</h3>
+                            <ul>
+                                <li>Payment Gateway (Tebex)</li>
+                                <li>Generación de PDFs</li>
+                                <li>Chart.js & Visualización</li>
+                                <li>Análisis de Sentimientos</li>
+                            </ul>
+                        </div>
+                        <div class="infobox">
+                            <h3><i class="fab fa-git"></i> Otros</h3>
+                            <ul>
+                                <li>Git & Github</li>
                                 <li>XAMPP</li>
-                                <li>Flask</li>
-                                <li>Unity</li>
-                                <li>JWT</li>
+                                <li>Flask & Django</li>
+                                <li>Unity & XAML/WPF</li>
                             </ul>
                         </div>
                         <div class="infobox">
@@ -430,24 +465,61 @@ function home_panel(isSpanish) {
                             </ul>
                         </div>
                         <div class="infobox">
-                            <h3> <i class="fa-solid fa-server"></i> Infrastructure</h3>
+                            <h3> <i class="fa-solid fa-server"></i> DevOps & Infrastructure</h3>
                             <ul>
                                 <li>Management of Physical and Virtual Servers</li>
-                                <li>GCP & Azure</li>
-                                <li>Oracle Cloud</li>
-                                <li>Docker</li>
+                                <li>GCP, Azure & Oracle Cloud</li>
+                                <li>Docker & Docker Compose</li>
+                                <li>Nginx & Postfix/Dovecot</li>
+                                <li>Redis (Smart Caching)</li>
+                                <li>IoT & Arduino</li>
+                                <li>CI/CD Automation</li>
                                 <li>Network Configuration</li>
                             </ul>
                         </div>
                         <div class="infobox">
-                            <h3> <i class="fab fa-git"></i> Others</h3>
+                            <h3><i class="fab fa-mobile"></i> Mobile Development</h3>
                             <ul>
-                                <li>Git</li>
-                                <li>Github</li>
+                                <li>Android (Java/Kotlin)</li>
+                                <li>REST APIs</li>
+                                <li>WebSockets</li>
+                                <li>FullStack Architecture</li>
+                            </ul>
+                        </div>
+                        <div class="infobox">
+                            <h3><i class="fas fa-cube"></i> Microservices</h3>
+                            <ul>
+                                <li>Microservices Architecture</li>
+                                <li>API Integration</li>
+                                <li>Reverse Engineering</li>
+                                <li>OAuth2</li>
+                            </ul>
+                        </div>
+                        <div class="infobox">
+                            <h3><i class="fas fa-lock"></i> Security & Encryption</h3>
+                            <ul>
+                                <li>JWT & RBAC</li>
+                                <li>Argon2, Fernet, HMAC</li>
+                                <li>Email Services (OpenDKIM)</li>
+                                <li>SSL/TLS Certificates</li>
+                            </ul>
+                        </div>
+                        <div class="infobox">
+                            <h3><i class="fas fa-credit-card"></i> Specific Integrations</h3>
+                            <ul>
+                                <li>Payment Gateway (Tebex)</li>
+                                <li>PDF Generation</li>
+                                <li>Chart.js & Data Visualization</li>
+                                <li>Sentiment Analysis</li>
+                            </ul>
+                        </div>
+                        <div class="infobox">
+                            <h3><i class="fab fa-git"></i> Others</h3>
+                            <ul>
+                                <li>Git & Github</li>
                                 <li>XAMPP</li>
-                                <li>Flask</li>
-                                <li>Unity</li>
-                                <li>JWT</li>
+                                <li>Flask & Django</li>
+                                <li>Unity & XAML/WPF</li>
                             </ul>
                         </div>
                         <div class="infobox">

@@ -1,5 +1,28 @@
 [
     {
+        "title": "UrraHosting - Plataforma SaaS Multi-Tenant",
+        "subtitle": "8 Microservicios · DevOps · Backend · Pagos · Email",
+        "description": "Plataforma SaaS multi-tenant compuesta por 8 microservicios independientes para hosting gestionado. Incluye: Dashboard principal con RBAC y JWT, panel de administración de correo corporativo self-hosted (Postfix/Dovecot/OpenDKIM), panel de bases de datos multi-motor (PostgreSQL + MySQL) con consola SQL en tiempo real vía WebSocket, pasarela de pagos propia con integración Tebex y webhooks HMAC, servicio de monitoreo de uptime con Chart.js, y templates de onboarding para clientes. Toda la infraestructura corre sobre Docker Compose con inter-comunicación segura entre contenedores, certificados SSL automatizados con Let's Encrypt, y despliegues vía API de Coolify.",
+        "image": "assets/imgs/urrahosting.png",
+        "documentation": "https://github.com/IdkBemja/Urrahost/wiki",
+        "demo": "https://urrahosting.cl",
+        "repoNames": ["Dashboard (SaaS)", "Admin Panel (Email)", "DB Panel", "Payment Gateway", "Status Service", "Landing Page", "Template PHP", "Template Flask"],
+        "repo": [
+            "https://github.com/IdkBemja/UrraHosting-Dashboard",
+            "https://github.com/IdkBemja/UrraHosting-AdminPanel",
+            "https://github.com/IdkBemja/UrraHosting-DBPanel",
+            "https://github.com/IdkBemja/UrraHosting-Payment",
+            "https://github.com/IdkBemja/UrraHosting-StatusService",
+            "https://github.com/IdkBemja/Urrahost",
+            "https://github.com/IdkBemja/UrraHosting-PHP-template",
+            "https://github.com/IdkBemja/UrraHosting-Flask-template"
+        ],
+        "technologys": ["Python", "Flask", "PostgreSQL", "MySQL", "Docker", "Docker Compose", "Nginx", "Linux", "JWT", "RBAC", "REST API", "WebSocket", "Redis", "Postfix", "Dovecot", "OpenDKIM", "Let's Encrypt", "Tebex API", "Coolify API", "Fernet", "Argon2", "HMAC", "Alembic", "SQLAlchemy", "Gunicorn", "Chart.js", "Bootstrap", "CI/CD"],
+        "featured": true,
+        "role": "Ingeniero DevOps + Desarrollador Backend + Arquitecto de Infraestructura",
+        "impact": "Plataforma SaaS con 8 microservicios en producción; pasarela de pagos con suscripciones automatizadas; infraestructura de correo corporativo con verificación DNS completa (SPF/DKIM/DMARC); panel de bases de datos con monitoreo de cuota y bloqueo automático; +90 PageSpeed; uptime >99.5%."
+    },
+    {
         "title": "Zaino Web - Monitoreo IoT de Flujo de Agua",
         "subtitle": "Sistema IoT + Aplicación Web",
         "description": "Solución IoT completa para monitoreo en tiempo real del caudal de agua para una comunidad agrícola, en colaboración con el Instituto Profesional AIEP. Integra hardware Arduino con sensores de flujo, API de Arduino IoT Cloud, y un dashboard web moderno. Incluye visualización de datos en tiempo real con medidores SVG, gráficos históricos de 5 minutos, integración meteorológica mediante ingeniería inversa de la API privada de Weathercloud, generación de informes mensuales con exportación PDF del lado del cliente, sistema de caché inteligente (TTL 8s), e interfaz responsive con Material Design. Desplegado en producción para gestión de recursos hídricos comunitarios.",
@@ -38,24 +61,6 @@
         "featured": true,
         "role": "Desarrollador Fullstack + Móvil + Integración IA",
         "impact": "Arquitectura de extremo a extremo: app Android nativa, orquestación de API backend, comunicación con servidor IA dedicado, mensajería en tiempo real con WebSockets, demuestra stack completo móvil + backend + IA."
-    },
-    {
-        "title": "UrraHosting - Plataforma de Hosting Web",
-        "subtitle": "Gestión de Infraestructura",
-        "description": "Plataforma completa de hosting web autogestionada que administra múltiples VMs, contenedores Docker y pipelines de despliegue automatizado. Incluye plantillas iniciales PHP y Python Flask para onboarding rápido de clientes, landing page optimizado para SEO (urrahosting.cl), gestión automatizada de certificados SSL, y dashboards de monitoreo. Demuestra experiencia en DevOps con infraestructura como código y mejores prácticas de contenerización.",
-        "image": "assets/imgs/urrahosting.png",
-        "documentation": "https://github.com/IdkBemja/Urrahost/wiki",
-        "demo": "https://urrahosting.cl",
-        "repoNames": ["Landing Page", "Template PHP", "Template Flask"],
-        "repo": [
-            "https://github.com/IdkBemja/Urrahost",
-            "https://github.com/IdkBemja/UrraHosting-PHP-template",
-            "https://github.com/IdkBemja/UrraHosting-Flask-template"
-        ],
-        "technologys": ["Docker", "VMs", "Linux", "PHP", "Python", "Flask", "Nginx", "SEO", "DevOps", "CI/CD", "SSL/TLS"],
-        "featured": true,
-        "role": "Ingeniero DevOps + Desarrollador Backend + Arquitecto de Infraestructura",
-        "impact": "Gestiona múltiples sitios de clientes en producción, despliegues automatizados con Docker, orquestación de VMs, landing optimizado para SEO (+90 PageSpeed), plantillas iniciales para despliegue rápido, demuestra madurez en infraestructura y DevOps."
     },
     {
         "title": "Aplicación de Notas v2",
